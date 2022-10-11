@@ -1,14 +1,14 @@
 * {
     /* No spaceing outside the elements for margin and padding*/
     margin: 0;
-    padding: 0;
     /* background-color: black;  */
 }
 
 :root {
     --width: 80px;
-    --transition-speed: 2.2s;
+    --transition-speed: 1s;
   }
+
 section {
     position: relative;
     width:100%;
@@ -24,8 +24,7 @@ section .row{
     position: relative;
     top: 0%;
     left: 0%; 
-    width: 100%;
-    display: flex;
+    display:flex;
     padding: 0 0;
     white-space: nowrap; 
 }
@@ -43,6 +42,8 @@ section .row{
     transition: 0s;
     color: #0f0;
     text-shadow: 0 0 120px #0f0;
+    --y-speed: 10s;
+    animation: y var(--y-speed) linear infinite alternate;
 }
 
 /* Movement/Animation of Icons */
@@ -62,8 +63,7 @@ section .row{
 .row4 {
     --x-speed: 15s;
     animation: x var(--x-speed) linear infinite alternate-reverse;
-}       
-
+}      
 #css {
     position: relative;
     left: 50%;
@@ -159,20 +159,18 @@ section .row{
     animation: y var(--y-speed) linear infinite alternate;
 }
 
-
-
 /* section .row div:nth-child(2) {
     animation: animate2 80s linear infinite;
     animation-delay: -40s;
 } */
 @keyframes x {
     100% {
-      transform: translateX(calc(100vw - var(--width)));
+      transform: translateX(calc(90vw - var(--width)));
     }
   }
 @keyframes y {
     100% {
-      transform: translateY(calc(100vh - var(--width)));
+      transform: translateY(calc(80vh - var(--width)));
     }
   }
 

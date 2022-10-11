@@ -49,10 +49,6 @@ function Background(){
                         <FontAwesomeIcon icon={brands('google')} class="icons" id="google"/>
                     </div>  
                 </div>
-                
-                
-
-                
             </section>
         </div>
     );
