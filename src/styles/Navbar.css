@@ -1,3 +1,17 @@
-.Navbar {
-    font-size: 50px;
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.Navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    font-size: 3vh;
+    background-color: transparent;
 }

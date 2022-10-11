@@ -16,8 +16,8 @@ section {
 }
 section .row{
     position: relative;
-    top: 0%;
-    left: -49%; 
+    top: -50%;
+    left: -9%; 
     width: 100%;
     display: flex;
     padding: 10px 0;
