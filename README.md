@@ -8,6 +8,7 @@ Free FontAwesome Pacakges
 
 Copy and Paste:
 Step 1: npm i --save @fortawesome/fontawesome-svg-core
+npm install --save font-awesome
 
 Step 2: npm i --save @fortawesome/free-solid-svg-icons
 npm i --save @fortawesome/free-regular-svg-icons
@@ -41,3 +42,4 @@ import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/
 <FontAwesomeIcon icon={regular('coffee')} />
 <FontAwesomeIcon icon={icon({name: 'coffee', style: 'solid'})} />
 <FontAwesomeIcon icon={brands('twitter')} />
+
