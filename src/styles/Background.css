@@ -4,6 +4,11 @@
     padding: 0;
     /* background-color: black;  */
 }
+
+:root {
+    --width: 80px;
+    --transition-speed: 2.2s;
+  }
 section {
     position: relative;
     width:100%;
@@ -13,26 +18,25 @@ section {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    
 }
 section .row{
     position: relative;
-    top: -50%;
-    left: -9%; 
+    top: 0%;
+    left: 0%; 
     width: 100%;
     display: flex;
-    padding: 10px 0;
-    white-space: nowrap;
-    font-size: 64px; 
-    transform: rotate(-30deg);
+    padding: 0 0;
+    white-space: nowrap; 
 }
 .icons {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(84, 84, 84, 0.5);
     transition: 1s; 
-    padding: 0 5px; 
+    padding: 0 30px; 
     user-select: none;
     cursor: default;
-    width: 10%;
-    
+    width: var(--width);
+    height: var(--width);
 }
 
 .icons:hover {
@@ -41,15 +45,141 @@ section .row{
     text-shadow: 0 0 120px #0f0;
 }
 
-section .row div {
-    animation: animate1 80s linear infinite;
-    animation-delay: -80s;
+/* Movement/Animation of Icons */
+
+.row1 {
+    --x-speed: 10s;
+    animation: x var(--x-speed) linear infinite alternate;
+}  
+.row2 {
+    --x-speed: 12s;
+    animation: x var(--x-speed) linear infinite alternate-reverse;
 }
-section .row div:nth-child(2) {
-    animation: animate2 80s linear infinite;
-    animation-delay: -40s;
+.row3 {
+    --x-speed: 17s;
+    animation: x var(--x-speed) linear infinite alternate;
+}       
+.row4 {
+    --x-speed: 15s;
+    animation: x var(--x-speed) linear infinite alternate-reverse;
+}       
+
+#css {
+    position: relative;
+    left: 50%;
+    --y-speed: 15s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#github {
+    --y-speed: 10s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#code {
+    --y-speed: 12s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#music {
+    --y-speed: 15s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#person {
+    --y-speed: 11s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#fish {
+    --y-speed: 13s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#python {
+    --y-speed: 20s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#rocket {
+    --y-speed: 11s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#brain {
+    --y-speed: 16s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#motorcycle {
+    --y-speed: 10s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#robot {
+    --y-speed: 12s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#square-js {
+    --y-speed: 19s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#java {
+    --y-speed: 24s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#laptop-code {
+    --y-speed: 16s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#stack-overflow {
+    --y-speed: 12s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#html5 {
+    --y-speed: 18s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#dumbbell {
+    --y-speed: 11s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#react {
+    --y-speed: 16s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#yin-yang {
+    --y-speed: 16s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#dog {
+    --y-speed: 12s;
+    animation: y var(--y-speed) linear infinite alternate;
+}
+#cat {
+    --y-speed: 13s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#earth-americas {
+    --y-speed: 15s;
+    animation: y var(--y-speed) linear infinite alternate-reverse;
+}
+#google {
+    --y-speed: 16s;
+    animation: y var(--y-speed) linear infinite alternate;
 }
 
+
+
+/* section .row div:nth-child(2) {
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+} */
+@keyframes x {
+    100% {
+      transform: translateX(calc(100vw - var(--width)));
+    }
+  }
+@keyframes y {
+    100% {
+      transform: translateY(calc(100vh - var(--width)));
+    }
+  }
+
+
+/* This is for moving in oppositve directions */
+
+/* 
 @keyframes animate1 {
     0% {
         transform: translateX(100%);
@@ -92,3 +222,4 @@ section .row:nth-child(even) div:nth-child(2) {
         transform: translateX(0);
     }
 }
+   */
