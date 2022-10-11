@@ -1,15 +1,11 @@
-import React, { useState } from 'react'
-import DayNightToggle from 'react-day-and-night-toggle'
+import '../styles/Navbar.css';
 
-const Navbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
-  return (
-    <DayNightToggle
-      onChange={() => setIsDarkMode(!isDarkMode)}
-      checked={isDarkMode}
-    />
-  )
+function Navbar(){
+    return (
+        <div className="Navbar">
+            
+        </div>
+    );
 }
 
 export default Navbar;

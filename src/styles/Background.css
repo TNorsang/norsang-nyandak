@@ -1,0 +1,24 @@
+* {
+    /* No spaceing outside the elements for margin and padding*/
+    margin: 0;
+    padding: 0;
+    /* background-color: black;  */
+}
+section {
+    position: relative;
+    width:100%;
+    /* vh = viewable screen height */
+    height:100vh;
+    background: #111;
+}
+.icons {
+    width: 10%;
+    transition: 1s; 
+    padding: 0 5px; 
+    color: #fff;
+}
+
+.icons:hover {
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
