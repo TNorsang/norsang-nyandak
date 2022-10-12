@@ -3,13 +3,20 @@
     margin: 0;
     /* background-color: black;  */
 }
-
 :root {
     /* size of the icons */
     --width: 8vh;
     --transition-speed: 1s;
   }
-/* This does not affect the bounce effect */
+/* -----------------------------NORSANG NYANDAK NAME -------------------------- */
+
+
+
+
+/* -----------------------------DECLARING ALL THE CSS ELEMENTS-------------------------- */
+
+
+  /* This does not affect the bounce effect */
 .Background {
     position: relative;
     width:100%;
@@ -19,10 +26,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    
-    
 }
-
 .icons {
     color: rgba(84, 84, 84, 0.5);
     transition: 5s; 
@@ -30,7 +34,6 @@
     cursor: default;
     width: var(--width);
     height: var(--width);
-    
 }
 /* Effects when hoverings */
 .icons:hover {
@@ -39,8 +42,10 @@
     text-shadow: 0 0 120px rgb(0, 17, 255);
 }
 
-/* Movement/Animation of Icons */
+/* -----------------------------ICON CLASS HORIZONTAL DIRECTION-------------------------- */
 
+
+/* Movement/Animation of Icons */
 /* Clases for all the horizontal speed */
 .x {
     --x-speed: 39s;
@@ -136,6 +141,7 @@
     animation: x var(--x-speed) linear infinite alternate;
 } 
 
+/* -----------------------------ICON ID VERTICAL DIRECTION-------------------------- */
 
 /* for VH the smaller the number the height boundary gets smaller */
 /* In this case each icon will have different vh since their starting position is different */
@@ -306,6 +312,9 @@
     position: relative;
     top: -2300%;
     transform: translateY(92vh); }
+
+
+/* -----------------------------ICON KEYFRAMES-------------------------- */
 
 
 /* Key Frames */
