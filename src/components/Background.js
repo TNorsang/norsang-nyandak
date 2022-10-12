@@ -12,8 +12,10 @@ function Background(){
             <div class="x">
                 <FontAwesomeIcon icon={brands('css3')} class="icons" id="css"/>
             </div>      
-            <div class="x2">        
-                <FontAwesomeIcon icon={brands('github')} class="icons" id="github"/>
+            <div class="x2">
+                <a href="https://github.com/TNorsang" target="_blank" >       
+                <FontAwesomeIcon icon={brands('github')} class="icons" id="github" />
+                </a>
             </div>
             <div class="x3">
                 <FontAwesomeIcon icon={solid('code')} class="icons" id="code"/>
@@ -81,7 +83,6 @@ function Background(){
             <div class="x23">
                 <FontAwesomeIcon icon={brands('google')} class="icons" id="google" />
             </div>
-            
         </div>
     );
 }

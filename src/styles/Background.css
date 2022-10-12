@@ -168,7 +168,7 @@
     transform: translateY(93vh); 
 }   
 #github {
-    --y-speed: 15s;
+    --y-speed: 18s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -145%;
