@@ -15,12 +15,12 @@
     color: white;
     text-align: center;
     top: 50%;
+    font-size: 3vh;
     /* This makes the div show infront of everything else 
     -1 = Behind , 0 = Middle , 1 = Front
     */
     z-index: 1;
 } 
-
 
 
 /* -----------------------------DECLARING ALL THE CSS ELEMENTS-------------------------- */
