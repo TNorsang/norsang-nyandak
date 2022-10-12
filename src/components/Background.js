@@ -29,15 +29,22 @@ function Background(){
             <div class="x7">
                <FontAwesomeIcon icon={brands('python')} class="icons" id="python"/>
             </div>
+            <div class="x8">
+               <FontAwesomeIcon icon={solid('rocket')} class="icons" id="rocket"/>
+            </div>
+            <div class="x9">
+               <FontAwesomeIcon icon={solid('brain')} class="icons" id="brain"/>
+            </div>
+            <div class="x10">
+               <FontAwesomeIcon icon={solid('motorcycle')} class="icons" id="motorcycle"/>
+            </div>
+            <div class="x11">
+                <FontAwesomeIcon icon={solid('robot')} class="icons" id="robot"/>
+            </div>
                         
                         
                         
                         
-                        
-                        <FontAwesomeIcon icon={solid('rocket')} class="icons" id="rocket"/>
-                        <FontAwesomeIcon icon={solid('brain')} class="icons" id="brain"/>
-                        <FontAwesomeIcon icon={solid('motorcycle')} class="icons" id="motorcycle"/>
-                        <FontAwesomeIcon icon={solid('robot')} class="icons" id="robot"/>
                         <FontAwesomeIcon icon={brands('square-js')} class="icons" id="square-js"/>
                         <FontAwesomeIcon icon={brands('java')} class="icons" id="java"/>
                         <FontAwesomeIcon icon={solid('laptop-code')} class="icons" id="laptop-code"/>

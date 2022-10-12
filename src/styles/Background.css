@@ -65,19 +65,38 @@
     --x-speed: 11s;
     animation: x var(--x-speed) linear infinite alternate;
 } 
-
+.x7 {
+    --x-speed: 11s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
+.x8 {
+    --x-speed: 11s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
+.x9 {
+    --x-speed: 11s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
+.x10 {
+    --x-speed: 11s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
+.x11 {
+    --x-speed: 11s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
 /* for VH the smaller the number the height boundary gets smaller */
 /* In this case each icon will have different vh since their starting position is different */
 
 #css {
     /* transform: rotate(30deg); */
-    --y-speed: 10s;
+    --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
     /* CSS is set to 91vh */    
     transform: translateY(91vh); 
 }   
 #github {
-    --y-speed: 12s;
+    --y-speed: 13s;
     animation: y var(--y-speed) linear infinite alternate-reverse;
     position: relative;
     top: -100%;
@@ -109,7 +128,7 @@
     transform: translateY(92vh); 
 }
 #fish {
-    --y-speed: 14s;
+    --y-speed: 6s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -510%;
@@ -117,28 +136,44 @@
     transform: translateY(94vh); 
 }
 #python {
-    ---y-speed: 1s;
+    --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -400%;
+    top: -600%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    /* transform: translateY(92vh);  */
+    transform: translateY(94vh); 
 }
 #rocket {
-    --y-speed: 11s;
+    --y-speed: 3s;
     animation: y var(--y-speed) linear infinite alternate;
+    position: relative;
+    top: -700%;
+    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    transform: translateY(94vh); 
 }
 #brain {
-    --y-speed: 16s;
+    --y-speed: 6s;
     animation: y var(--y-speed) linear infinite alternate;
+    position: relative;
+    top: -800%;
+    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    transform: translateY(92vh); 
 }
 #motorcycle {
-    --y-speed: 10s;
+    --y-speed: 8s;
     animation: y var(--y-speed) linear infinite alternate;
+    position: relative;
+    top: -910%;
+    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    transform: translateY(94vh); 
 }
 #robot {
-    --y-speed: 12s;
+    --y-speed: 7s;
     animation: y var(--y-speed) linear infinite alternate;
+    position: relative;
+    top: -1000%;
+    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    transform: translateY(94vh); 
 }
 #square-js {
     --y-speed: 19s;
