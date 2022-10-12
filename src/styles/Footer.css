@@ -1,0 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+}
+.Footer {
+    background: black;
+}
+#text {
+    font-size: 40px; 
+}
