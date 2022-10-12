@@ -40,8 +40,8 @@
     overflow: hidden;
 }
 .icons {
-    color: rgba(15, 15, 15, 0.5);
-    transition: 5s; 
+    color: rgba(0, 0, 0, 0.5);
+    transition: 40s; 
     user-select: none;
     cursor: default;
     width: var(--width);
