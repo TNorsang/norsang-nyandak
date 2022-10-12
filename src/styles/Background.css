@@ -10,6 +10,16 @@
   }
 /* -----------------------------NORSANG NYANDAK NAME -------------------------- */
 
+.name {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 50%;
+    /* This makes the div show infront of everything else 
+    -1 = Behind , 0 = Middle , 1 = Front
+    */
+    z-index: 1;
+} 
 
 
 

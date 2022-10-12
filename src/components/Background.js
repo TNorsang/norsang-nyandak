@@ -8,6 +8,11 @@ import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/
 function Background(){
     return (
         <div className="Background">
+
+            <div class="name">
+                <h1> Norsang Nyandak </h1>
+            </div>
+
             <div class="x">
                 <FontAwesomeIcon icon={brands('css3')} class="icons" id="css"/>
             </div>      
