@@ -34,10 +34,9 @@
 }
 /* Effects when hoverings */
 .icons:hover {
-    transition: 0s;
+    /* transition: 1s; */
     color: rgb(0, 4, 255);
     text-shadow: 0 0 120px rgb(0, 17, 255);
-    transform: scale(2);
 }
 
 /* Movement/Animation of Icons */

@@ -1,10 +1,10 @@
-Hello and Welcome!
+# Hello and Welcome!
 
-My name is Norsang Nyandak and I am a Software Engineer.
+## My name is Norsang Nyandak and I am a dedicated Software Engineer, who believes in dreams backed with hard work.
 
-NPM installs for this to work:
+### NPM installs for this to work:
 
-Free FontAwesome Pacakges
+**Free FontAwesome Pacakges**
 
 Copy and Paste:
 Step 1: npm i --save @fortawesome/fontawesome-svg-core
@@ -42,4 +42,3 @@ import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/
 <FontAwesomeIcon icon={regular('coffee')} />
 <FontAwesomeIcon icon={icon({name: 'coffee', style: 'solid'})} />
 <FontAwesomeIcon icon={brands('twitter')} />
-
