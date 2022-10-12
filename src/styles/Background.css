@@ -16,6 +16,7 @@
     text-align: center;
     font-size: 240%;
     top: 45%;
+    /* font-family: Microsoft New Tai Lue; */
     font-family: Arial, Helvetica, sans-serif;
     /* This makes the div show infront of everything else 
         -1 = Behind , 0 = Middle , 1 = Front
@@ -102,6 +103,10 @@
     --x-speed: 29s;
     animation: x var(--x-speed) linear infinite alternate;
 } 
+.x111 {
+    --x-speed: 29s;
+    animation: x var(--x-speed) linear infinite alternate;
+} 
 .x12 {
     --x-speed: 28s;
     animation: x var(--x-speed) linear infinite alternate;
@@ -134,10 +139,7 @@
     --x-speed: 21s;
     animation: x var(--x-speed) linear infinite alternate;
 } 
-.x20 {
-    --x-speed: 20s;
-    animation: x var(--x-speed) linear infinite alternate;
-} 
+
 .x21 {
     --x-speed: 19s;
     animation: x var(--x-speed) linear infinite alternate;
@@ -250,7 +252,7 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -1150%;
-    transform: translateY(93vh); 
+    transform: translateY(92vh); 
 }
 #java {
     --y-speed: 27s;

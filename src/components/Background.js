@@ -42,7 +42,7 @@ function Background(){
             <div class="x11">
                 <FontAwesomeIcon icon={solid('robot')} class="icons" id="robot"/>
             </div>
-            <div class="x11">
+            <div class="x111">
                 <FontAwesomeIcon icon={brands('square-js')} class="icons" id="square-js"/>
             </div>
             <div class="x12">
