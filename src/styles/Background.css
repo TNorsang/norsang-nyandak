@@ -5,19 +5,20 @@
 }
 :root {
     /* size of the icons */
-    --width: 8vh;
+    --width: 9vh;
     --transition-speed: 1s;
   }
 /* -----------------------------NORSANG NYANDAK NAME -------------------------- */
 
-.name {
+#norsang {
     position: relative;
     color: white;
     text-align: center;
-    top: 50%;
-    font-size: 3vh;
+    font-size: 240%;
+    top: 45%;
+    font-family: Arial, Helvetica, sans-serif;
     /* This makes the div show infront of everything else 
-    -1 = Behind , 0 = Middle , 1 = Front
+        -1 = Behind , 0 = Middle , 1 = Front
     */
     z-index: 1;
 } 
@@ -60,7 +61,6 @@
 .x {
     --x-speed: 39s;
     animation: x var(--x-speed) linear infinite alternate;
-    
 } 
 .x2 {
     --x-speed: 38s;
@@ -158,25 +158,26 @@
 
 /* ID's for all the vertical speed */
 #css {
-    /* transform: rotate(30deg); */
-    --y-speed: 14s;
-    animation: y var(--y-speed) linear infinite alternate;
-    /* CSS is set to 91vh */    
-    transform: translateY(91vh); 
-}   
-#github {
-    --y-speed: 13s;
+    --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -100%;
+    top: -50%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    transform: translateY(90vh); 
+    transform: translateY(93vh); 
+}   
+#github {
+    --y-speed: 15s;
+    animation: y var(--y-speed) linear infinite alternate;
+    position: relative;
+    top: -145%;
+    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    transform: translateY(93vh); 
 }
 #code {
     --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -200%;
+    top: -250%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }
@@ -184,7 +185,7 @@
     --y-speed: 6s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -300%;
+    top: -345%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }
@@ -192,7 +193,7 @@
     --y-speed: 7s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -400%;
+    top: -445%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(92vh); 
 }
@@ -200,7 +201,7 @@
     --y-speed: 7s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -510%;
+    top: -560%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(94vh); 
 }
@@ -208,7 +209,7 @@
     --y-speed: 25s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -600%;
+    top: -650%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(94vh); 
 }
@@ -216,15 +217,15 @@
     --y-speed: 2s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -700%;
+    top: -745%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    transform: translateY(94vh); 
+    transform: translateY(93vh); 
 }
 #brain {
     --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -800%;
+    top: -845%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(92vh); 
 }
@@ -232,96 +233,102 @@
     --y-speed: 5s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -910%;
+    top: -960%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    transform: translateY(94vh); 
+    transform: translateY(95vh); 
 }
 #robot {
     --y-speed: 10s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1000%;
+    top: -1050%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    transform: translateY(94vh); 
+    transform: translateY(93vh); 
 }
 #square-js {
     --y-speed: 24s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1100%;
-    transform: translateY(95vh); 
+    top: -1150%;
+    transform: translateY(93vh); 
 }
 #java {
     --y-speed: 27s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1200%;
-    transform: translateY(93vh); 
+    top: -1250%;
+    transform: translateY(92vh); 
 }
 #laptop-code {
     --y-speed: 11s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1310%;
+    top: -1360%;
     transform: translateY(94vh); 
 }
 #stack-overflow {
     --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1405%;
+    top: -1465%;
     transform: translateY(94vh); 
 }
 #html5 {
     --y-speed: 20s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1500%;
-    transform: translateY(94vh); 
+    top: -1550%;
+    transform: translateY(93vh); 
 }
 #dumbbell {
     --y-speed: 5s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1615%;
-    transform: translateY(94vh); 
+    top: -1665%;
+    transform: translateY(95vh); 
 }
 #react {
     --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1700%;
-    transform: translateY(92vh); }
+    top: -1750%;
+    transform: translateY(93vh); 
+}
 #yin-yang {
     --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1800%;
-    transform: translateY(92vh); }
+    top: -1850%;
+    transform: translateY(92vh); 
+}
 #dog {
     --y-speed: 10s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -1903%;
-    transform: translateY(94vh); }
+    top: -1948%;
+    transform: translateY(93vh); 
+}
 #cat {
     --y-speed: 8s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -2000%;
-    transform: translateY(94vh); }
+    top: -2050%;
+    transform: translateY(92vh); 
+}
 #earth-americas {
     --y-speed: 9s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -2100%;
-    transform: translateY(92vh); }
+    top: -2145%;
+    transform: translateY(92vh); 
+}
 #google {
     --y-speed: 16s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -2300%;
-    transform: translateY(92vh); }
+    top: -2345%;
+    transform: translateY(92vh); 
+}
 
 
 /* -----------------------------ICON KEYFRAMES-------------------------- */
