@@ -34,7 +34,7 @@
 }
 /* Effects when hoverings */
 .icons:hover {
-    /* transition: 1s; */
+    transition: 0s;
     color: rgb(0, 4, 255);
     text-shadow: 0 0 120px rgb(0, 17, 255);
 }
