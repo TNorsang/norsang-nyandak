@@ -468,7 +468,7 @@
     top: -1150%;
     transform: translateY(92vh); 
 }
-#square:hover {
+#square-js:hover {
     animation-play-state:paused;
     cursor: pointer;
 }

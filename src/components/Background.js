@@ -1,3 +1,6 @@
+// Importing music
+import React, { useState, useEffect } from "react";
+
 import ReactDOM from 'react-dom';
 import '../styles/Background.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
