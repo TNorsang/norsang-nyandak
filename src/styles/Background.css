@@ -334,7 +334,7 @@
 }
 
 
-#code {
+#code{
     animation: pulse 2s infinite;
     --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
@@ -494,7 +494,7 @@
     top: -1360%;
     transform: translateY(94vh); 
 }
-#laptop:hover {
+#laptop-code:hover {
     animation-play-state:paused;
     cursor: pointer;
 }
