@@ -9,11 +9,12 @@ function Footer(){
     return(
         <div className="Footer">
             <div>
-                <p id="text">Hello</p>
+                <p id="text">Projects</p>
             </div>
         </div>
         
     );
 }
+
 
 export default Footer;
