@@ -599,7 +599,7 @@
     top: -2145%;
     transform: translateY(92vh); 
 }
-#eart-americas:hover {
+#earth-americas:hover {
     animation-play-state:paused;
     cursor: pointer;
 }
