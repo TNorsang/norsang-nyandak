@@ -3,11 +3,11 @@ import '../styles/Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'font-awesome/css/font-awesome.min.css';
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'; 
+import React, { Component }  from 'react';
 
-
-function Footer(){
+function Projects(){
     return(
-        <div className="Footer">
+        <div className="Projects">
             <div>
                 <p id="text">Projects</p>
             </div>
@@ -17,4 +17,4 @@ function Footer(){
 }
 
 
-export default Footer;
+export default Projects;

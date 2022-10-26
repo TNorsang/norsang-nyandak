@@ -1,11 +1,17 @@
 // Importing music
 import React, { useState, useEffect } from "react";
-
 import ReactDOM from 'react-dom';
 import '../styles/Background.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'font-awesome/css/font-awesome.min.css';
 import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro'; 
+
+// var norsang = document.getElementById("norsang");
+// norsang.innerHTML ="no";
+
+// function pulse(){
+//     document.getElementsByClassName("icons").style.color = "blue";
+// }
 
 // If I want each icon to behave a certain way I can't put them in a row  
 function Background(){

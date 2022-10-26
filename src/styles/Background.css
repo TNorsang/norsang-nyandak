@@ -25,21 +25,23 @@
     z-index: 1;
 } 
 
-
 /* -----------------------------DECLARING ALL THE CSS ELEMENTS-------------------------- */
 
 
   /* This does not affect the bounce effect */
 .Background {
+    background-color: black;
     position: relative;
     width:100%;
     /* vh = viewable screen height */
     height:100vh;
-    background: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden; 
+      
 }
+
+
 .icons {
     color: rgba(0, 0, 0, 0.5);
     transition: 40s; 
@@ -55,6 +57,7 @@
     text-shadow: 0 0 120px rgb(255, 255, 255);
 }
 
+
 /* -----------------------------ICON CLASS HORIZONTAL DIRECTION-------------------------- */
 
 
@@ -68,8 +71,6 @@
     animation-play-state:paused;
     cursor: pointer;
 } 
-
-
 .x2 {
     --x-speed: 38s;
     animation: x var(--x-speed) linear infinite alternate;
@@ -78,8 +79,6 @@
     animation-play-state:paused;
     cursor: pointer;
 } 
-
-
 .x3 {
     --x-speed: 37s;
     animation: x var(--x-speed) linear infinite alternate;
@@ -305,6 +304,8 @@
 /* In this case each icon will have different vh since their starting position is different */
 
 /* ID's for all the vertical speed */
+
+
 #css {
     --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
@@ -632,3 +633,16 @@
       transform: translateY(calc(100% - var(--width)));
     }
   }
+/*  Pulsing */
+@keyframes color {
+    0% {
+      color: rgb(0, 0, 0);
+    }
+    50% {
+      color: rgb(8, 0, 255);
+    }
+    100% {
+      color: rgb(0, 0, 0);
+    }
+  }
+
