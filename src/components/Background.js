@@ -9,7 +9,7 @@ import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/
 // var norsang = document.getElementById("norsang");
 // norsang.innerHTML ="no";
 
-// function pulse(){
+// function pulse()
 //     document.getElementsByClassName("icons").style.color = "blue";
 // }
 
@@ -93,6 +93,6 @@ function Background(){
                 <FontAwesomeIcon icon={brands('google')} class="icons" id="google" />
             </div>
         </div>
-    );
+            );
 }
 export default Background;

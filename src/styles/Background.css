@@ -30,7 +30,8 @@
 
   /* This does not affect the bounce effect */
 .Background {
-    background-color: black;
+    background-image: radial-gradient(circle, rgb(29, 29, 29), black, black);
+    /* background-color: black; */
     position: relative;
     width:100%;
     /* vh = viewable screen height */
@@ -38,7 +39,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden; 
-      
 }
 
 
