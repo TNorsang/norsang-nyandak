@@ -30,8 +30,10 @@
 
   /* This does not affect the bounce effect */
 .Background {
+    /* Circle Gradient */
     background-image: radial-gradient(circle, rgb(29, 29, 29), black, black);
-    /* background-color: black; */
+    /* Testing Purposes */
+    /* background-color: rgb(255, 255, 255); */
     position: relative;
     width:100%;
     /* vh = viewable screen height */
@@ -65,7 +67,7 @@
 /* Clases for all the horizontal speed */
 .x {
     --x-speed: 39s;
-    animation: x var(--x-speed) linear infinite alternate;
+    animation: color infinite;
 }
 .x:hover {
     animation-play-state:paused;
@@ -272,6 +274,7 @@
 .x21 {
     --x-speed: 19s;
     animation: x var(--x-speed) linear infinite alternate-reverse;
+
 } 
 .x21:hover {
     animation-play-state:paused;
@@ -310,7 +313,7 @@
     --y-speed: 15s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -50%;
+    top: -80%;
     /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }  
@@ -325,8 +328,7 @@
     animation: pulse 2s infinite;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -145%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    top: -155%;
     transform: translateY(93vh); 
 }
 #github:hover {
@@ -340,8 +342,7 @@
     --y-speed: 14s;
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
-    top: -250%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+    top: -265%;
     transform: translateY(93vh); 
 }
 #code:hover {
@@ -355,7 +356,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -345%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }
 #music:hover {
@@ -369,7 +369,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -445%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(92vh); 
 }
 #person:hover {
@@ -383,7 +382,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -560%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(94vh); 
 }
 #fish:hover {
@@ -397,7 +395,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -650%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(94vh); 
 }
 #python:hover {
@@ -411,7 +408,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -745%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }
 #rocket:hover {
@@ -425,7 +421,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -845%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(92vh); 
 }
 #brain:hover {
@@ -439,7 +434,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -960%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(95vh); 
 }
 #motorcycle:hover {
@@ -453,7 +447,6 @@
     animation: y var(--y-speed) linear infinite alternate;
     position: relative;
     top: -1050%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
     transform: translateY(93vh); 
 }
 #robot:hover {
@@ -634,7 +627,7 @@
     }
   }
 /*  Pulsing */
-@keyframes color {
+/* @keyframes color {
     0% {
       color: rgb(0, 0, 0);
     }
@@ -644,5 +637,5 @@
     100% {
       color: rgb(0, 0, 0);
     }
-  }
+  } */
 
