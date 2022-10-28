@@ -13,23 +13,14 @@
 }
 #hello {
   position: relative;
-  left: 20vh;
-}
-.Background {
-  /* Circle Gradient */
-  /* background-image: radial-gradient(circle, rgb(29, 29, 29) 10%, black, black); */
-  background-color: rgb(0, 0, 0);
-  position: relative;
-  /* vh = viewable screen height */
-  height: 100vh;
-  
-  
-  overflow: hidden;
+  top: 7.5vh;
+  left: 42%;
 }
 #hand {
   position: relative;
   top: 1vh;
   height: 8vh;
+  left: 50%;
   transform: rotate(90deg);
   animation-name: wave-animation;
   animation-duration: 4s;
