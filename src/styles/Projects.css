@@ -37,36 +37,36 @@
 
 #git {
     position: relative;
-    top: 12rem;
-    left: 25rem;
+    top: 20vh;
+    left: 45vw;
     width: 6%;
 }
 
 #git1 {
     position: relative;
-    top: 25rem;
-    left: 25rem;
+    top: 27vh;
+    left: 31vw;
     width: 6%;
 }
 
 #git2 {
     position: relative;
-    top: 25rem;
-    left: 25rem;
+    top: 40vh;
+    left: 19vw;
     width: 6%;
 }
 
 #git3 {
     position: relative;
-    top: 25rem;
-    left: 25rem;
+    top: 40vh;
+    left: 40vw;
     width: 6%;
 }
 
 #git4 {
     position: relative;
-    top: 25rem;
-    left: 25rem;
+    top: 27vh;
+    left: 29vw;
     width: 6%;
 }
 
