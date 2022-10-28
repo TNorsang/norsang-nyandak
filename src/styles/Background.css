@@ -1,6 +1,7 @@
 * {
     /* No spaceing outside the elements for margin and padding*/
     margin: 0;
+    padding: 0;
     /* background-color: black;  */
 }
 
@@ -38,7 +39,6 @@
     position: relative;
     /* vh = viewable screen height */
     height: 100vh;
-    width: 100$;
     display: flex;
     flex-direction: column;
     overflow: hidden;
