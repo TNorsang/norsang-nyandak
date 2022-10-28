@@ -6,26 +6,32 @@
 .Abouts {
   background: rgb(231, 231, 231);
   font-family: Arial, Helvetica, sans-serif;
-  /* display: flex;
-  flex-direction: column; */
+  flex-direction: column;
+  height: 100vh;
   /* This stops from excess width to show */
   overflow: hidden;
 }
 #hello {
   position: relative;
   top: 7.5vh;
-  left: 42%;
+  left: 44%;
 }
 #hand {
   position: relative;
   top: 1vh;
   height: 8vh;
-  left: 50%;
+  left: 51%;
   transform: rotate(90deg);
   animation-name: wave-animation;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   transform-origin: 5% 200%;
+}
+#bio {
+  position: relative;
+  top: 8%;
+  left: 25%;
+  width: 50%;
 }
 
 
