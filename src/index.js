@@ -4,7 +4,7 @@ import '../src/styles/Index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Background from './components/Background';
-import Projects from './components/Projects';
+import Abouts from './components/Abouts';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,7 +12,7 @@ root.render(
 
     <div id="main">
         <Background />
-        <Projects />
+        <Abouts />
     </div>
    
 );
