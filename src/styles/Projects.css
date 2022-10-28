@@ -15,67 +15,39 @@
 
 #text {
     position: relative;
-    top: 50vh;
-    left: 80vh;
+    top: 10vh;
+    left: 75vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     font-weight: bolder;
 }
 
-.git {
-    color: black;
-}
-
-.git:hover {
-    color: rgb(64, 67, 255);
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-#git {
+#hand {
     position: relative;
-    top: 20vh;
-    left: 45vw;
-    width: 6%;
+    top: 10vh;
+    left: 80vh;
+    height: 6%;
+    transform: rotate(90deg);
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 4s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 5% 200%;       /* Pivot around the bottom-left palm */
+    /* display: inline-block; */
 }
 
-#git1 {
-    position: relative;
-    top: 27vh;
-    left: 31vw;
-    width: 6%;
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+    20% { transform: rotate(-8.0deg) }
+    30% { transform: rotate(14.0deg) }
+    40% { transform: rotate(-4.0deg) }
+    50% { transform: rotate(10.0deg) }
+    60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
 }
 
-#git2 {
-    position: relative;
-    top: 40vh;
-    left: 19vw;
-    width: 6%;
-}
 
-#git3 {
-    position: relative;
-    top: 40vh;
-    left: 40vw;
-    width: 6%;
-}
 
-#git4 {
-    position: relative;
-    top: 27vh;
-    left: 29vw;
-    width: 6%;
-}
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
