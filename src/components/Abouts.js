@@ -17,7 +17,7 @@ function Abouts() {
         <div id="hello">
           <h1>Hello</h1>
         </div>
-        <div>
+        <div class="hand">
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>

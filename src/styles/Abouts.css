@@ -13,16 +13,22 @@
 }
 .containA {
   position: relative;
-  left: 45%;
+  left: -5vh;
 }
 #hello {
   position: relative;
   top: 7.5vh;
+  position: relative;
+  text-align: center;
   /* left: 14vh; */
+}
+/* Setting the position of the item */
+.hand{
+  text-align: center;
+  top: 1vh;
 }
 #hand {
   position: relative;
-  top: 1vh;
   height: 8vh;
   left: 11vh;
   transform: rotate(90deg);
