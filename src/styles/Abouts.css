@@ -11,10 +11,12 @@
   /* This stops from excess width to show */
   overflow: hidden;
 }
+/* Container of hand icon and hello message */
 .containA {
   position: relative;
   left: -5vh;
 }
+/* Hello Message */
 #hello {
   position: relative;
   top: 7.5vh;
@@ -22,11 +24,13 @@
   text-align: center;
   /* left: 14vh; */
 }
-/* Setting the position of the item */
+
+/* Div. Setting the position of the item */
 .hand{
   text-align: center;
   top: 1vh;
 }
+/* Hand Icon ID */
 #hand {
   position: relative;
   height: 8vh;
@@ -37,7 +41,8 @@
   animation-iteration-count: infinite;
   transform-origin: 5% 200%;
 }
-#bio {
+/* BIO message */
+.bio {
   position: relative;
   top: 8%;
   left: 25%;

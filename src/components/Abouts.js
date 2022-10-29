@@ -21,10 +21,10 @@ function Abouts() {
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>
-      <div id="bio">
-        <p>
-          My name is Norsang Nyandak. I am currently an ongoing student for
-          Computer Science.
+      <div class="bio">
+        <p >
+          My name is Norsang Nyandak and I am a devoted Software Developer. 
+          I enjoy expressing my creative side through programming.
         </p>
       </div>
       {/* <h1 id="hello">Hello</h1>
