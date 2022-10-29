@@ -13,15 +13,18 @@ import React, { Component } from "react";
 function Abouts() {
   return (
     <div className="Abouts">
-      <div id="hello">
-        <h1>Hello</h1>
-      </div>
-      <div>
-        <FontAwesomeIcon icon={regular("hand")} id="hand" />
+      <div class="containA">
+        <div id="hello">
+          <h1>Hello</h1>
+        </div>
+        <div>
+          <FontAwesomeIcon icon={regular("hand")} id="hand" />
+        </div>
       </div>
       <div id="bio">
         <p>
-          My name is Norsang Nyandak. I am currently an ongoing student for Computer Science.
+          My name is Norsang Nyandak. I am currently an ongoing student for
+          Computer Science.
         </p>
       </div>
       {/* <h1 id="hello">Hello</h1>
