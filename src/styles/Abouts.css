@@ -34,12 +34,12 @@
   animation-iteration-count: infinite;
   transform-origin: 5% 200%;
 }
-#pImg{
+/* #pImg{
   border-radius: 50%;
   width: 20%;
-}
+} */
 
-.overlay {
+/* .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -62,7 +62,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
+} */
 
 
 /* For Waving Animation */
