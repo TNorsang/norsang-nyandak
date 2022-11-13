@@ -34,9 +34,6 @@
   animation-iteration-count: infinite;
   transform-origin: 5% 200%;
 }
-
-.profileImg{
-}
 #pImg{
   border-radius: 50%;
   width: 20%;
@@ -54,10 +51,9 @@
   transition: .5s ease;
   background-color: #008CBA;
 }
-.profileImg:hover .overlay {
+#pImg:hover .overlay {
   opacity: 1;
 }
-
 .text {
   color: white;
   font-size: 20px;
