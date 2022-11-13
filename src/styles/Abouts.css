@@ -13,28 +13,23 @@
 }
 /* Container of hand icon and hello message */
 .containA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  left: -5vh;
+  height: 100vh;
 }
-/* Hello Message */
-#hello {
-  position: relative;
-  top: 7.5vh;
-  position: relative;
-  text-align: center;
-  /* left: 14vh; */
-}
+
 
 /* Div. Setting the position of the item */
 .hand{
   text-align: center;
-  top: 1vh;
 }
 /* Hand Icon ID */
 #hand {
   position: relative;
-  height: 8vh;
-  left: 11vh;
+  height: 6vh;
+  left: 2vh;
   transform: rotate(90deg);
   animation-name: wave-animation;
   animation-duration: 4s;
