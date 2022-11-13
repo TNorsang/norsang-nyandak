@@ -21,9 +21,12 @@ function Abouts() {
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>
-      {/* <div class="bio">
-        <p></p>
-      </div> */}
+      <div class="profileImg">
+        <img src={require("../assets/profileimage.jpeg")} id="pImg" />
+        <div class="overlay">
+          <div class="text">Hello</div>
+        </div>
+      </div>
     </div>
   );
 }
