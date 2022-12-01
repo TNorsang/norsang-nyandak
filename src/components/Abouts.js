@@ -21,21 +21,25 @@ function Abouts() {
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>
-      <div id="cplus">
+      <div id="cplus" class="btnStyle">
         <h1>C++</h1>
       </div>
-      <div id="html">
+      <div id="html" class="btnStyle">
         <h1>HTML</h1>
       </div>
-      <div id="cssText">
+      <div id="cssText" class="btnStyle">
         <h1>CSS</h1>
       </div>
-      <div id="javaText">
+      <div id="javaText" class="btnStyle">
         <h1>JAVA</h1>
       </div>
-      <div id="pythonText">
+      <div id="pythonText" class="btnStyle">
         <h1>PYTHON</h1>
       </div>
+      <div id="php" class="btnStyle">
+        <h1>PHP</h1>
+      </div>
+
       {/* <div class="profileImg">
         <img src={require("../assets/profileimage.jpeg")} id="pImg" />
         <div class="overlay">

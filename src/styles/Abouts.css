@@ -35,33 +35,14 @@
   transform-origin: 5% 200%;
 }
 
-#cplus {
+/* Buttons */
+.btnStyle{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  padding: 5px;
-  left: 10%;
-  top: 6%;
   width: 10%;
   height: 8%;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  color : white;
-  background-color:rgb(0, 0, 0);
-  border-radius: 20px;
-}
-#html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   padding: 5px;
-  left: 63%;
-  top: -9%;
-  width: 16%;
-  height: 8%;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
@@ -69,9 +50,46 @@
   background-color:rgb(0, 0, 0);
   border-radius: 20px;
 }
-#cplus:hover, #html:hover{
+.btnStyle:hover{
   background-color: rgb(0, 3, 178);
 }
+
+#cplus {
+  position: relative; 
+  left: 1%;
+  top: -5%;
+}
+#html {
+  position: relative;
+  left: 16%;
+  top: 0%;
+  width: 13%;
+}
+#php{
+  position: relative;
+  left: 56%;
+  top: -27%;
+}
+#cssText{
+  position: relative;
+  left: 17%;
+  top: 11%;
+  width: 10%;
+}
+#javaText{
+  position: relative;
+  left: 78%;
+  top: 42%;
+  width: 11%;
+}
+#pythonText{
+  position: relative;
+  left: 50%;
+  top: 21%;
+  width: 20%;
+}
+
+
 
 
 
