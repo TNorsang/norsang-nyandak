@@ -40,15 +40,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
-  height: 8%;
+  width: 8%;
+  height: 10%;
   padding: 5px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   color : white;
   background-color:rgb(0, 0, 0);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .btnStyle:hover{
   background-color: rgb(0, 3, 178);
@@ -63,7 +63,7 @@
   position: relative;
   left: 20%;
   top: 11%;
-  width: 13%;
+  width: 10%;
 }
 #php{
   position: relative;
@@ -74,7 +74,6 @@
   position: relative;
   left: 10%;
   top: 12%;
-  width: 10%;
 }
 #javaText{
   position: relative;
@@ -86,7 +85,7 @@
   position: relative;
   left: 50%;
   top: 21%;
-  width: 20%;
+  width: 14%;
 }
 
 
