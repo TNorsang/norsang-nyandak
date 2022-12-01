@@ -51,11 +51,11 @@ function Abouts() {
     </div>
   );
 }
-let html = document.getElementById("html");
-html.addEventListener("mouseover", showText);
-function showText() {
-  let info = document.getElementById("htmlInfo");
-  info.innerHTML = "HTML IS AWESOME!";
-}
+// let html = document.getElementById("html");
+// html.addEventListener("mouseover", showText);
+// function showText() {
+//   let info = document.getElementById("htmlInfo");
+//   info.innerHTML = "HTML IS AWESOME!";
+// }
 
 export default Abouts;
