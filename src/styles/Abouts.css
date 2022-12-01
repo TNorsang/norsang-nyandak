@@ -57,23 +57,23 @@
 #cplus {
   position: relative; 
   left: 1%;
-  top: -5%;
+  top: -51%;
 }
 #html {
   position: relative;
-  left: 16%;
-  top: 0%;
+  left: 20%;
+  top: 11%;
   width: 13%;
 }
 #php{
   position: relative;
-  left: 56%;
-  top: -27%;
+  left: 43%;
+  top: -8%;
 }
 #cssText{
   position: relative;
-  left: 17%;
-  top: 11%;
+  left: 10%;
+  top: 12%;
   width: 10%;
 }
 #javaText{

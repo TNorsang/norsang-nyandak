@@ -21,11 +21,13 @@ function Abouts() {
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>
-      <div id="cplus" class="btnStyle">
-        <h1>C++</h1>
-      </div>
+
       <div id="html" class="btnStyle">
         <h1>HTML</h1>
+        <span id="htmlInfo"></span>
+      </div>
+      <div id="php" class="btnStyle">
+        <h1>PHP</h1>
       </div>
       <div id="cssText" class="btnStyle">
         <h1>CSS</h1>
@@ -36,8 +38,8 @@ function Abouts() {
       <div id="pythonText" class="btnStyle">
         <h1>PYTHON</h1>
       </div>
-      <div id="php" class="btnStyle">
-        <h1>PHP</h1>
+      <div id="cplus" class="btnStyle">
+        <h1>C++</h1>
       </div>
 
       {/* <div class="profileImg">
@@ -49,5 +51,12 @@ function Abouts() {
     </div>
   );
 }
+// let html = document.getElementById("html");
+// html.addEventListener("mouseover", showText);
+
+// function showText() {
+//   let info = document.getElementById("htmlInfo");
+//   info.innerHTML = "HTML IS AWESOME!";
+// }
 
 export default Abouts;
