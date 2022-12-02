@@ -17,8 +17,15 @@ function Abouts() {
         <a href="https://github.com/TNorsang" target="_blank">
           <FontAwesomeIcon icon={brands("github")} id="gitH" className="glt" />
         </a>
-        <a href="https://www.linkedin.com/in/norsang-nyandak-077577173/" target="_blank">
-          <FontAwesomeIcon icon={brands("linkedin")} id="linked" className="glt" />
+        <a
+          href="https://www.linkedin.com/in/norsang-nyandak-077577173/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={brands("linkedin")}
+            id="linked"
+            className="glt"
+          />
         </a>
       </div>
       <div className="line"></div>
@@ -30,26 +37,6 @@ function Abouts() {
         <div className="hand">
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
-      </div>
-
-      <div id="html" className="btnStyle">
-        <h1>HTML</h1>
-        <span id="htmlInfo"></span>
-      </div>
-      <div id="php" className="btnStyle">
-        <h1>PHP</h1>
-      </div>
-      <div id="cssText" className="btnStyle">
-        <h1>CSS</h1>
-      </div>
-      <div id="javaText" className="btnStyle">
-        <h1>JAVA</h1>
-      </div>
-      <div id="pythonText" className="btnStyle">
-        <h1>PYTHON</h1>
-      </div>
-      <div id="cplus" className="btnStyle">
-        <h1>C++</h1>
       </div>
 
       {/* <div class="profileImg">

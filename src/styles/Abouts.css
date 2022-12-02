@@ -46,7 +46,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 45%;
+  top: 35%;
 }
 
 /* Div. Setting the position of the item */
@@ -66,64 +66,8 @@
   transform-origin: 5% 200%;
 }
 
-/* Buttons */
-.btnStyle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8%;
-  height: 10%;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  cursor: pointer;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50px;
-}
 
-.btnStyle:hover {
-  background-color: rgb(0, 3, 178);
-}
 
-#cplus {
-  position: relative;
-  left: 1%;
-  top: -51%;
-}
-
-#html {
-  position: relative;
-  left: 20%;
-  top: 11%;
-  width: 10%;
-}
-
-#php {
-  position: relative;
-  left: 43%;
-  top: -8%;
-}
-
-#cssText {
-  position: relative;
-  left: 10%;
-  top: 12%;
-}
-
-#javaText {
-  position: relative;
-  left: 78%;
-  top: 42%;
-  width: 11%;
-}
-
-#pythonText {
-  position: relative;
-  left: 50%;
-  top: 21%;
-  width: 14%;
-}
 
 
 
