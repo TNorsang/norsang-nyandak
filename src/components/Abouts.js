@@ -30,6 +30,14 @@ function Abouts() {
       </div>
       <div className="line"></div>
 
+      <div className="card" tabindex="0">
+        <span className="card__infoicon">
+          {/* <i className="fa fa-info"></i> */}
+        </span>
+        <h1 className="card__title">Hello and Welcome!</h1>
+        <p className="card__description">Hello and welcome to my portfolio!</p>
+      </div>
+
       <div className="handsWaveContainer">
         <div id="hello">
           <h1>Hello</h1>
