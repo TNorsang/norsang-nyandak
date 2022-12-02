@@ -24,18 +24,28 @@
   height: 50%;
   padding: 10px;
   color: black;
+  animation: spin 10s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused; 
 }
 
+
 .glt:hover {
-  color: rgb(0, 3, 178);
+  color: rgb(5, 8, 174);
+  animation-play-state: running;
 }
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
 
 /* Line */
 .line {
   position: relative;
   top: -2%;
   left: 40%;
-  height: 1px;
+  height: 2px;
   background: black;
   width: 20%;
 }
@@ -66,15 +76,7 @@
   transform-origin: 5% 200%;
 }
 
-
-
-
-
-
-
-
 /* For Waving Animation */
-
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
