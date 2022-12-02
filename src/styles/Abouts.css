@@ -11,18 +11,49 @@
   /* This stops from excess width to show */
   overflow: hidden;
 }
+
+/* container */
+.gitLinkTwit {
+  display: flex;
+  justify-content: center;
+  height: 10%;
+}
+
+/* Class that handles all the GLT positiong and color */
+.glt {
+  height: 50%;
+  padding: 10px;
+  color: black;
+}
+
+.glt:hover {
+  color: rgb(0, 3, 178);
+}
+
+/* Line */
+.line {
+  position: relative;
+  top: -2%;
+  left: 40%;
+  height: 1px;
+  background: black;
+  width: 20%;
+}
+
 /* Container of hand icon and hello message */
 .handsWaveContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top:45%;
+  top: 45%;
 }
+
 /* Div. Setting the position of the item */
-.hand{
+.hand {
   text-align: center;
 }
+
 /* Hand Icon ID */
 #hand {
   position: relative;
@@ -36,7 +67,7 @@
 }
 
 /* Buttons */
-.btnStyle{
+.btnStyle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,42 +77,48 @@
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  color : white;
-  background-color:rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 50px;
 }
-.btnStyle:hover{
+
+.btnStyle:hover {
   background-color: rgb(0, 3, 178);
 }
 
 #cplus {
-  position: relative; 
+  position: relative;
   left: 1%;
   top: -51%;
 }
+
 #html {
   position: relative;
   left: 20%;
   top: 11%;
   width: 10%;
 }
-#php{
+
+#php {
   position: relative;
   left: 43%;
   top: -8%;
 }
-#cssText{
+
+#cssText {
   position: relative;
   left: 10%;
   top: 12%;
 }
-#javaText{
+
+#javaText {
   position: relative;
   left: 78%;
   top: 42%;
   width: 11%;
 }
-#pythonText{
+
+#pythonText {
   position: relative;
   left: 50%;
   top: 21%;
@@ -98,24 +135,31 @@
   0% {
     transform: rotate(0deg);
   }
+
   10% {
     transform: rotate(14deg);
   }
+
   20% {
     transform: rotate(-8deg);
   }
+
   30% {
     transform: rotate(14deg);
   }
+
   40% {
     transform: rotate(-4deg);
   }
+
   50% {
     transform: rotate(10deg);
   }
+
   60% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

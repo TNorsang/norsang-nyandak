@@ -13,32 +13,42 @@ import React, { Component } from "react";
 function Abouts() {
   return (
     <div className="Abouts">
-      <div class="handsWaveContainer">
+      <div className="gitLinkTwit">
+        <a href="https://github.com/TNorsang" target="_blank">
+          <FontAwesomeIcon icon={brands("github")} id="gitH" className="glt" />
+        </a>
+        <a href="https://www.linkedin.com/in/norsang-nyandak-077577173/" target="_blank">
+          <FontAwesomeIcon icon={brands("linkedin")} id="linked" className="glt" />
+        </a>
+      </div>
+      <div className="line"></div>
+
+      <div className="handsWaveContainer">
         <div id="hello">
           <h1>Hello</h1>
         </div>
-        <div class="hand">
+        <div className="hand">
           <FontAwesomeIcon icon={regular("hand")} id="hand" />
         </div>
       </div>
 
-      <div id="html" class="btnStyle">
+      <div id="html" className="btnStyle">
         <h1>HTML</h1>
         <span id="htmlInfo"></span>
       </div>
-      <div id="php" class="btnStyle">
+      <div id="php" className="btnStyle">
         <h1>PHP</h1>
       </div>
-      <div id="cssText" class="btnStyle">
+      <div id="cssText" className="btnStyle">
         <h1>CSS</h1>
       </div>
-      <div id="javaText" class="btnStyle">
+      <div id="javaText" className="btnStyle">
         <h1>JAVA</h1>
       </div>
-      <div id="pythonText" class="btnStyle">
+      <div id="pythonText" className="btnStyle">
         <h1>PYTHON</h1>
       </div>
-      <div id="cplus" class="btnStyle">
+      <div id="cplus" className="btnStyle">
         <h1>C++</h1>
       </div>
 
