@@ -20,7 +20,18 @@
 }
 
 .pageIcon {
-  height: 50%;
+  height: 70%;
+}
+
+/* Moving each icons */
+#gitH {
+  position: relative;
+  left: -40%;
+}
+
+#linked {
+  position: relative;
+  left: 22%;
 }
 
 /* Class that handles all the GLT positiong and color */
@@ -61,11 +72,6 @@
   justify-content: center;
   position: relative;
   top: 11%;
-}
-
-/* Div. Setting the position of the item */
-.hand {
-  text-align: center;
 }
 
 /* Hand Icon ID */
