@@ -13,6 +13,12 @@
 }
 
 /* Container of hand icon and hello message */
+#hello {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 2vh;
+}
+
 .handsWaveContainer {
   display: flex;
   align-items: center;
