@@ -31,6 +31,7 @@ function Abouts() {
         </div>
       </div>
 
+
       {/* <div class="profileImg">
         <img src={require("../assets/profileimage.jpeg")} id="pImg" />
         <div class="overlay">
