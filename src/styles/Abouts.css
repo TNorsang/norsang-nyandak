@@ -16,62 +16,48 @@
 .gitLinkTwit {
   display: flex;
   justify-content: center;
-  height: 10%;
-}
-
-.pageIcon {
-  height: 70%;
+  height: 11%;
+  position: absolute;
+  left: 46%;
 }
 
 /* Moving each icons */
 #gitH {
-  position: relative;
-  left: -40%;
+  position: absolute;
+  left: -17vh;
+  top: 2vh;
 }
 
 #linked {
-  position: relative;
-  left: 22%;
+  position: absolute;
+  left: 22vh;
+  top: 2vh;
 }
 
-/* Class that handles all the GLT positiong and color */
-.glt {
-  margin: 10px;
-  color: black;
-  animation: spin 10s linear infinite;
-  /*Set our animation play state to paused initially */
-  animation-play-state: paused;
+/* animation */
+.pageIcon {
+  color: rgb(1, 2, 36);
+  height: 70%;
+  /* border: solid 0px #555; */
+  transition: all 0.5s ease;
+  z-index: 1;
 }
 
-.glt:hover {
-  color: rgb(5, 8, 174);
-  animation-play-state: running;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(1turn);
-  }
+.pageIcon:hover {
+  transform: scale(1.5);
+  color: rgb(17, 19, 160);
 }
 
 
-/* Line */
-.line {
-  position: relative;
-  top: -2%;
-  left: 40%;
-  height: 2px;
-  background: black;
-  width: 20%;
-}
 
 /* Container of hand icon and hello message */
 .handsWaveContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   position: relative;
-  top: 11%;
+  z-index: 0;
 }
 
 /* Hand Icon ID */
@@ -84,65 +70,6 @@
   animation-duration: 4s;
   animation-iteration-count: infinite;
   transform-origin: 5% 200%;
-}
-
-/* Card Table Animation */
-
-.card {
-  position: relative;
-  top: 1%;
-  left: 1%;
-  padding: 42px 32px;
-  clip-path: circle(5% at 95% 11%);
-  transition: all ease-in-out .3s;
-  background-color: #ffffff;
-}
-
-.card__infoicon {
-  position: absolute;
-
-  top: 10px;
-  right: 28px;
-
-  font-size: 1.4em;
-  color: #000000;
-  transition: ease-out .3s;
-}
-
-.card__title {
-  margin: 0;
-
-  font-size: 3em;
-  line-height: 1.8;
-}
-
-.card__description {
-  margin: 0;
-
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.card:hover {
-  border-bottom-color: #0099ff;
-}
-
-.card:hover,
-.card:focus {
-  clip-path: circle(75%);
-  border-radius: 20px;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12),
-    0px 3px 18px rgba(0, 0, 0, 0.08);
-  background: #ffffff;
-
-  outline: none;
-
-}
-
-.card:focus {
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.12),
-    0px 3px 18px rgba(0, 0, 0, 0.08),
-    0px 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
 
