@@ -12,26 +12,48 @@
   overflow: hidden;
 }
 
+/* Container of hand icon and hello message */
+.handsWaveContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  left: -8vh;
+  z-index: 0;
+}
+
+/* Hand Icon ID */
+#hand {
+  position: relative;
+  height: 6vh;
+  left: 2vh;
+  transform: rotate(90deg);
+  animation-name: wave-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 5% 200%;
+}
+
 /* container */
 .gitLinkTwit {
   display: flex;
   justify-content: center;
   height: 11%;
-  position: absolute;
   left: 46%;
 }
 
 /* Moving each icons */
 #gitH {
-  position: absolute;
-  left: -17vh;
-  top: 2vh;
+  position: relative;
+  left: 0vh;
+  top: 1.5vh;
 }
 
 #linked {
-  position: absolute;
-  left: 22vh;
-  top: 2vh;
+  position: relative;
+  left: 29vh;
+  top: 1.5vh;
 }
 
 /* animation */
@@ -50,27 +72,7 @@
 
 
 
-/* Container of hand icon and hello message */
-.handsWaveContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-  z-index: 0;
-}
 
-/* Hand Icon ID */
-#hand {
-  position: relative;
-  height: 6vh;
-  left: 2vh;
-  transform: rotate(90deg);
-  animation-name: wave-animation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  transform-origin: 5% 200%;
-}
 
 
 /* For Waving Animation */
