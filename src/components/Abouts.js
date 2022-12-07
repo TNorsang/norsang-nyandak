@@ -9,6 +9,7 @@ import {
   icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
 import React, { Component } from "react";
+// import Media from 'react-media';
 
 function Abouts() {
   return (
