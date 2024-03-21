@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.helloContainer{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  top: -38%;
+  height: 20vh;
+}
+
 .Abouts {
   background: rgb(231, 231, 231);
   font-family: Arial, Helvetica, sans-serif;
@@ -75,6 +83,25 @@
   transform: scale(1.5);
   color: rgb(17, 19, 160);
 }
+
+.profileImg{
+  display: flex;
+  position: relative;
+  top: 50%;
+}
+
+#pImg {
+  position: relative;
+  top: -50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.text {
+  background-color: blue;
+}
+
 
 /* For Waving Animation */
 @keyframes wave-animation {

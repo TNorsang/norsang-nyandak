@@ -662,6 +662,24 @@
 }
 
 
+.message-bubble {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    /* Adjust position as needed */
+    top: 50px;
+    left: 50px;
+  }
+  
+  .icon-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+
 /* -----------------------------ICON KEYFRAMES-------------------------- */
 
 
@@ -677,3 +695,4 @@
         transform: translateY(calc(100% - var(--width)));
     }
 }
+
