@@ -56,7 +56,7 @@ function Abouts() {
           </motion.div>
         </motion.div>
       </div>
-      <div className="imageContainer">
+      {/* <div className="imageContainer">
         <motion.div
           drag // Enables dragging
           dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Constrains dragging within the parent container
@@ -81,7 +81,7 @@ function Abouts() {
             <div className="text">Your sentence or two about yourself</div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
