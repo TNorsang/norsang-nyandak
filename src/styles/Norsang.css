@@ -13,13 +13,13 @@
 
 /* -----------------------------NORSANG NYANDAK NAME -------------------------- */
 
-#norsang {
+#norsang {    
     display: flex;
     justify-content: center;
-    color: blue;
-    text-align: center;
+    position: relative;
+    top:50%;
+    color: white;
     font-size: 240%;
-    
     /* font-family: Microsoft New Tai Lue; */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;

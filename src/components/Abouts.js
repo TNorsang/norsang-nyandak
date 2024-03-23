@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -6,21 +6,50 @@ import {
   regular,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
 import "../styles/Abouts.css";
+import {useState} from "react";
 
 // import Media from 'react-media';
 
 function Abouts() {
+  const handleClick = () => {
+    const scrollDuration = 1000; // Duration of the scrolling animation in milliseconds
+    const start = window.scrollY;
+    const distance = document.documentElement.scrollHeight - window.innerHeight;
+    const startTime = performance.now();
+
+    const easeInOutQuad = t => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+
+    const scrollStep = () => {
+      const now = performance.now();
+      const time = Math.min(1, ((now - startTime) / scrollDuration));
+      const easedTime = easeInOutQuad(time);
+      window.scrollTo(0, start + (distance * easedTime));
+
+      if (time < 1) {
+        requestAnimationFrame(scrollStep);
+      }
+    };
+
+    requestAnimationFrame(scrollStep);
+  };
+
   return (
     <div className="Abouts">
       <div className="helloContainer">
-        <div className="profileImg">
-            <img
-              src={require("../assets/profileimage.jpeg")}
-              id="pImg"
-              alt="Profile"
-            />
-        </div>
-     
+      <div className="profileImg">
+    <motion.img
+        drag
+        dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+        dragElastic={0.8}
+        dragTransition={{ bounceStiffness: 500, bounceDamping: 10 }}
+        whileHover={{ scale: 1.1 }}
+        onClick={handleClick} // Scroll down slowly when clicked
+        src={require("../assets/profileimage.jpeg")}
+        id="pImg"
+        alt="Profile"
+    />
+</div>
+
         <motion.div
           className="handsWaveContainer"
           initial={{ opacity: 0, y: -100 }}

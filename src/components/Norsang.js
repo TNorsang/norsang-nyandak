@@ -13,6 +13,7 @@ import {
 import {motion} from "framer-motion";
 
 
+
 function Norsang() {
   const [scrollStopped, setScrollStopped] = useState(false);
   const [color, setColor] = useState("white");
@@ -23,14 +24,15 @@ useEffect(() => {
     const scrollY = window.scrollY || window.pageYOffset;
     if (scrollY >= stopPosition) {
       setScrollStopped(true);
-    } else {
-      setScrollStopped(false);
-    }
+    } 
+    // else {
+    //   setScrollStopped(false);
+    // }
 
     if (scrollY >= colorPosition){
       setColor("black");
     } else {
-      setColor('White');
+      setColor('White')
     }
   };
 
@@ -41,13 +43,42 @@ useEffect(() => {
   };
 }, []);
 
+const textVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2 // Adjust the delay between each letter
+    }
+  }
+};
+
+const letterVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.2 // Adjust the duration for each letter to appear
+    }
+  }
+};
   return (
     <div className="Background">
       <motion.div
        id="norsang"
-       style={{ position: scrollStopped ? "absolute" : "fixed", color: color, top:"45%", left:"42%" }} 
+      //  style={{ position: scrollStopped ? "absolute" : "fixed", color: color}} 
        >
-        <p>Norsang Nyandak</p>
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={textVariants}
+          >
+            {"Norsang Nyandak".split("").map((letter, index) => (
+              <motion.span key={index} variants={letterVariants}>
+                {letter}
+              </motion.span>
+            ))}
+        </motion.div>
+
       </motion.div>
       <div class="x">
         <FontAwesomeIcon icon={brands("css3")} class="icons" id="css" />
