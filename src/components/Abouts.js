@@ -13,6 +13,14 @@ function Abouts() {
   return (
     <div className="Abouts">
       <div className="helloContainer">
+        <div className="profileImg">
+            <img
+              src={require("../assets/profileimage.jpeg")}
+              id="pImg"
+              alt="Profile"
+            />
+        </div>
+     
         <motion.div
           className="handsWaveContainer"
           initial={{ opacity: 0, y: -100 }}
@@ -56,32 +64,7 @@ function Abouts() {
           </motion.div>
         </motion.div>
       </div>
-      {/* <div className="imageContainer">
-        <motion.div
-          drag // Enables dragging
-          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} // Constrains dragging within the parent container
-          dragElastic={0.5} // Adjusts the "bounciness" of dragging
-          style={{
-            width: 200,
-            height: 200,
-            backgroundColor: "blue",
-            borderRadius: 20,
-            cursor: "grab", // Change cursor to indicate draggable content
-          }}
-        >
-          Draggable Content
-        </motion.div>
-        <div className="profileImg">
-          <img
-            src={require("../assets/profileimage.jpeg")}
-            id="pImg"
-            alt="Profile"
-          />
-          <div className="overlay">
-            <div className="text">Your sentence or two about yourself</div>
-          </div>
-        </div>
-      </div> */}
+      
     </div>
   );
 }

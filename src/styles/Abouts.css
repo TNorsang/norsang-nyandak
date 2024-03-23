@@ -3,22 +3,51 @@
   padding: 0;
 }
 
-.helloContainer{
-  display:flex;
-  justify-content: center;
-  position: relative;
-  top: -38%;
-  height: 20vh;
-}
-
+/* Abouts page, the whole page */
 .Abouts {
+  position: static;
+  display: flex;
+  flex-direction: column;
   background: rgb(231, 231, 231);
   font-family: Arial, Helvetica, sans-serif;
-  flex-direction: column;
   height: 100vh;
   /* This stops from excess width to show */
   overflow: hidden;
 }
+
+/* Holds second page */
+
+.helloContainer{
+  display:flex;
+  justify-content: center;
+  margin: 1em;
+  height: 20vh;
+}
+
+.profileImg{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button {
+  height: 200px;
+}
+
+
+
+#pImg {
+  height: 13em;
+  border-radius: 50px;
+}
+
+
+
+
+/* Image Container Page */
+
+
+
 
 /* Container of hand icon and hello message */
 #hello {
@@ -84,19 +113,8 @@
   color: rgb(17, 19, 160);
 }
 
-.profileImg{
-  display: flex;
-  position: relative;
-  top: 50%;
-}
 
-#pImg {
-  position: relative;
-  top: -50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-}
+
 
 .text {
   background-color: blue;

@@ -3,7 +3,7 @@
 import '../src/styles/Index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Background from './components/Background';
+import Background from './components/Norsang';
 import Abouts from './components/Abouts';
 
 

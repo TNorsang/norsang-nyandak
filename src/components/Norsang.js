@@ -1,7 +1,7 @@
 // Importing music
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import "../styles/Background.css";
+import "../styles/Norsang.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "font-awesome/css/font-awesome.min.css";
 import {
@@ -19,7 +19,7 @@ import {
 // }
 
 // If I want each icon to behave a certain way I can't put them in a row
-function Background() {
+function Norsang() {
   return (
     <div className="Background">
       <div id="norsang">
@@ -122,4 +122,4 @@ function Background() {
     </div>
   );
 }
-export default Background;
+export default Norsang;
