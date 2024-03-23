@@ -10,21 +10,45 @@ import {
   brands,
   icon,
 } from "@fortawesome/fontawesome-svg-core/import.macro";
+import {motion} from "framer-motion";
 
-// var norsang = document.getElementById("norsang");
-// norsang.innerHTML ="no";
 
-// function pulse()
-//     document.getElementsByClassName("icons").style.color = "blue";
-// }
-
-// If I want each icon to behave a certain way I can't put them in a row
 function Norsang() {
+  const [scrollStopped, setScrollStopped] = useState(false);
+  const [color, setColor] = useState("white");
+useEffect(() => {
+  const handleScroll = () => {
+    const stopPosition = 760; // Adjust this value to set the position where scrolling should stop
+    const colorPosition = 500;
+    const scrollY = window.scrollY || window.pageYOffset;
+    if (scrollY >= stopPosition) {
+      setScrollStopped(true);
+    } else {
+      setScrollStopped(false);
+    }
+
+    if (scrollY >= colorPosition){
+      setColor("black");
+    } else {
+      setColor('White');
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
   return (
     <div className="Background">
-      <div id="norsang">
+      <motion.div
+       id="norsang"
+       style={{ position: scrollStopped ? "absolute" : "fixed", color: color, top:"45%", left:"42%" }} 
+       >
         <p>Norsang Nyandak</p>
-      </div>
+      </motion.div>
       <div class="x">
         <FontAwesomeIcon icon={brands("css3")} class="icons" id="css" />
       </div>
