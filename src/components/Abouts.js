@@ -56,30 +56,6 @@ function Abouts() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          {/* <div className="gitLinkTwit">
-            <a
-              href="https://github.com/TNorsang"
-              target="_blank"
-              className="glt"
-            >
-              <FontAwesomeIcon
-                icon={brands("github")}
-                id="gitH"
-                className="pageIcon"
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/norsang-nyandak-077577173/"
-              target="_blank"
-              className="glt"
-            >
-              <FontAwesomeIcon
-                icon={brands("linkedin")}
-                id="linked"
-                className="pageIcon"
-              />
-            </a>
-          </div> */}
           <div id="hello">
             <h1>Hello</h1>
           </div>

@@ -49,26 +49,28 @@
 
 
 /* Container of hand icon and hello message */
+.handsWaveContainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5%;
+  height: 100vh;
+}
+
 #hello {
   position: relative;
-  left: -22%;
+  left: -5%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 2vh;
 }
 
-.handsWaveContainer {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-}
-
 /* Hand Icon ID */
 #hand {
+  position: relative;
+  left: 5%;
+  top: -1%;
   height: 6vh;
-  position: absolute;
-  left: -45%;
   transform: rotate(90deg);
   animation-name: wave-animation;
   animation-duration: 4s;
