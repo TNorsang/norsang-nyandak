@@ -29,6 +29,30 @@
     z-index: 1;
 }
 
+.gitLinkTwit {
+    display: flex;
+    justify-content: space-evenly;
+  }
+.gitLink{
+    width: var(--width);
+    height: var(--width);
+    animation: colorChange 15s infinite alternate; /* Duration, type, and iteration count of the animation */
+}
+
+@keyframes colorChange {
+    0% {
+      color: rgb(0, 4, 255);; /* Start color */
+    }
+    50% {
+      color: rgba(0, 4, 255, 0.1);; /* Middle color */
+    }
+    100% {
+      color: rgb(0, 4, 255);; /* End color */
+    }
+  }
+
+
+
 /* -----------------------------DECLARING ALL THE CSS ELEMENTS-------------------------- */
 
 
@@ -77,6 +101,7 @@
     animation-play-state: paused;
     cursor: pointer;
 }
+
 
 .x2 {
     --x-speed: 38s;
@@ -352,6 +377,16 @@
     cursor: pointer;
 }
 
+@keyframes css {
+    0% {
+      /* Start position */
+      transform: translateX(0);
+    }
+    100% {
+      /* End position */
+      transform: translateX(100%);
+    }
+  }
 
 
 #github {

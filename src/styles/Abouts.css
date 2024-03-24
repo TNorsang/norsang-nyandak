@@ -59,16 +59,16 @@
 
 .handsWaveContainer {
   display: flex;
-  align-items: center;
+  justify-content: center;
   height: 100vh;
-  z-index: 0;
+  position: relative;
 }
 
 /* Hand Icon ID */
 #hand {
   height: 6vh;
-  position: relative;
-  left: -90%;
+  position: absolute;
+  left: -45%;
   transform: rotate(90deg);
   animation-name: wave-animation;
   animation-duration: 4s;
@@ -77,11 +77,11 @@
 }
 
 /* container */
-.gitLinkTwit {
+/* .gitLinkTwit {
   position: relative;
   height: 11vh;
   left: -24%;
-}
+} */
 
 /* Moving each icons */
 #gitH {

@@ -56,7 +56,7 @@ function Abouts() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="gitLinkTwit">
+          {/* <div className="gitLinkTwit">
             <a
               href="https://github.com/TNorsang"
               target="_blank"
@@ -79,7 +79,7 @@ function Abouts() {
                 className="pageIcon"
               />
             </a>
-          </div>
+          </div> */}
           <div id="hello">
             <h1>Hello</h1>
           </div>

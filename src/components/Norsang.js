@@ -68,6 +68,7 @@ const letterVariants = {
       //  style={{ position: scrollStopped ? "absolute" : "fixed", color: color}} 
        >
         <motion.div
+            className="Norsangcontainer"
             initial="hidden"
             animate="visible"
             variants={textVariants}
@@ -77,6 +78,27 @@ const letterVariants = {
                 {letter}
               </motion.span>
             ))}
+            <div className="gitLinkTwit">
+            <a
+              href="https://github.com/TNorsang"
+              target="_blank"
+            >
+              <motion.div
+                whileHover={{ scale: 1.2}}
+
+        >
+          <FontAwesomeIcon icon={brands("github")} className="gitLink" />
+        </motion.div>
+      </a>
+      <a href="https://www.linkedin.com/in/norsang-nyandak-077577173/" target="_blank">
+        <motion.div
+          whileHover={{ scale: 1.2}}
+
+        >
+          <FontAwesomeIcon icon={brands("linkedin")} className="gitLink" />
+        </motion.div>
+            </a>
+          </div>
         </motion.div>
 
       </motion.div>
