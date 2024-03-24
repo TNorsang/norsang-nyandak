@@ -51,15 +51,16 @@
 /* Container of hand icon and hello message */
 .handsWaveContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   position: relative;
   top: 5%;
-  height: 100vh;
 }
 
 #hello {
-  position: relative;
-  left: -5%;
+  position: absolute;
+  width: 100vh;
+  left:50%;
+  background-color: red;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 2vh;
@@ -67,7 +68,7 @@
 
 /* Hand Icon ID */
 #hand {
-  position: relative;
+  position: absolute;
   left: 5%;
   top: -1%;
   height: 6vh;
@@ -78,12 +79,14 @@
   transform-origin: 5% 200%;
 }
 
-/* container */
-/* .gitLinkTwit {
+/* Intro Container */
+
+
+.introText {
   position: relative;
-  height: 11vh;
-  left: -24%;
-} */
+  top:110%;
+  background-color: red;
+}
 
 /* Moving each icons */
 #gitH {

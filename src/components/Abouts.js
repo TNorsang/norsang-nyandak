@@ -68,6 +68,11 @@ function Abouts() {
             <FontAwesomeIcon icon={regular("hand")} id="hand" />
           </motion.div>
         </motion.div>
+        <motion.div className="intro">
+          <motion.p className="introText">
+          I am an ambitious and dedicated Senior at the New Jersey Institute of Technology, driven by a deep passion for software development and a strong desire to contribute my skills to a dynamic and challenging career opportunity. With a keen interest in artificial intelligence (AI), I am eager to explore and leverage cutting-edge technologies to tackle complex problems and drive innovation in the field of software development.
+          </motion.p>
+        </motion.div>
       </div>
       
     </div>
