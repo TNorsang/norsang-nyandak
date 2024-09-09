@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import NavBar from "./NavBar";
 import Logo from "./Logo";
 import { useState, useEffect } from "react";
-import { text } from "@fortawesome/fontawesome-svg-core";
 
 export default function About() {
   const texts = ["Tashi Delek", "Hello", "Namaste"];
@@ -14,7 +13,7 @@ export default function About() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 5000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, []);
@@ -23,7 +22,7 @@ export default function About() {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { duration: 0.4 },
+      transition: { duration: 4, delay: 0.2 },
     },
     exit: {
       opacity: 0,
@@ -37,7 +36,7 @@ export default function About() {
         <Logo />
       </motion.div>
 
-      <motion.div className="text-white w-1/2">
+      <motion.div className="text-textBlue w-1/2">
         <motion.div
           key={index}
           initial="hidden"
