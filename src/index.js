@@ -1,20 +1,12 @@
 // Index.js is the structure of the whole website
 
-import '../src/styles/Index.css';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import Background from './components/Norsang';
-import Abouts from './components/Abouts';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-
-    <div id="main">
-        <Background />
-        <Abouts />
-    </div>
-   
+  <div id="main">
+    <App />
+  </div>
 );
-
-

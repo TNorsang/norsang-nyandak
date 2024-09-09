@@ -1,333 +1,292 @@
 * {
-    /* No spaceing outside the elements for margin and padding*/
-    margin: 0;
-    padding: 0;
-    /* background-color: black;  */
+  /* No spaceing outside the elements for margin and padding*/
+  margin: 0;
+  padding: 0;
+  /* background-color: black;  */
 }
 
 :root {
-    /* size of the icons */
-    --width: 9vh;
-    --transition-speed: 1s;
+  /* size of the icons */
+  --width: 9vh;
+  --transition-speed: 1s;
 }
 
 /* -----------------------------NORSANG NYANDAK NAME -------------------------- */
 
-#norsang {    
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top:50%;
-    color: white;
-    font-size: 240%;
-    /* font-family: Microsoft New Tai Lue; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    /* This makes the div show infront of everything else 
+#norsang {
+  display: flex;
+  justify-content: center;
+  /* font-family: Microsoft New Tai Lue; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  /* This makes the div show infront of everything else 
         -1 = Behind , 0 = Middle , 1 = Front
     */
-    z-index: 1;
+  z-index: 1;
 }
 
 /* -----------------------------DECLARING ALL THE CSS ELEMENTS-------------------------- */
 
-
 /* This does not affect the bounce effect */
-.Background {
-    /* Circle Gradient */
-    /* background-image: radial-gradient(circle, rgb(29, 29, 29) 10%, black, black); */
-    background-color: rgb(0, 0, 0);
-    position: relative;
-    /* vh = viewable screen height */
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-
 
 .icons {
-    color: rgba(0, 4, 255, 0.1);
-    transition: 40s;
-    user-select: none;
-    cursor: default;
-    width: var(--width);
-    height: var(--width);
+  color: rgba(0, 4, 255, 0.1);
+  transition: 40s;
+  user-select: none;
+  cursor: default;
+  width: var(--width);
+  height: var(--width);
 }
 
 /* Effects when hoverings */
 .icons:hover {
-    transition: 0s;
-    color: rgb(0, 4, 255);
-    text-shadow: 0 0 120px rgb(255, 255, 255);
+  transition: 0s;
+  color: rgb(0, 4, 255);
+  text-shadow: 0 0 120px rgb(255, 255, 255);
 }
 
 /* -----------------------------ICON CLASS HORIZONTAL DIRECTION-------------------------- */
 
-
 /* Movement/Animation of Icons */
 /* Clases for all the horizontal speed */
 .x {
-    --x-speed: 39s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 39s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 .x2 {
-    --x-speed: 38s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 38s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x2:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 .x3 {
-    --x-speed: 37s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 37s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x3:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x4 {
-    --x-speed: 36s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 36s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x4:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x5 {
-    --x-speed: 35s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 35s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x5:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x6 {
-    --x-speed: 34s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 34s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x6:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x7 {
-    --x-speed: 33s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 33s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x7:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x8 {
-    --x-speed: 32s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 32s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x8:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x9 {
-    --x-speed: 31s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 31s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x9:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x10 {
-    --x-speed: 30s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 30s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x10:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x11 {
-    --x-speed: 29s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 29s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x11:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x111 {
-    --x-speed: 29s;
-    animation: x var(--x-speed) linear infinite alternate;
+  --x-speed: 29s;
+  animation: x var(--x-speed) linear infinite alternate;
 }
 
 .x111:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x12 {
-    --x-speed: 28s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 28s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x12:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x13 {
-    --x-speed: 27s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 27s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x13:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x14 {
-    --x-speed: 26s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 26s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x14:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x15 {
-    --x-speed: 25s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 25s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x15:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x16 {
-    --x-speed: 24s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
-
+  --x-speed: 24s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x16:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 .x17 {
-    --x-speed: 23s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 23s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x17:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x18 {
-    --x-speed: 22s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 22s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x18:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x19 {
-    --x-speed: 21s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 21s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x19:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x20 {
-    --x-speed: 21s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 21s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x20:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x21 {
-    --x-speed: 19s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
-
+  --x-speed: 19s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x21:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x22 {
-    --x-speed: 18s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 18s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x22:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .x23 {
-    --x-speed: 17s;
-    animation: x var(--x-speed) linear infinite alternate-reverse;
+  --x-speed: 17s;
+  animation: x var(--x-speed) linear infinite alternate-reverse;
 }
 
 .x23:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
 /* -----------------------------ICON ID VERTICAL DIRECTION-------------------------- */
@@ -337,363 +296,334 @@
 
 /* ID's for all the vertical speed */
 
-
 #css {
-    --y-speed: 15s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -80%;
-    /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
-    transform: translateY(93vh);
+  --y-speed: 15s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -80%;
+  /* This is the code! vh is set to 91 for bouncing around the screen  91 is the number so far! */
+  transform: translateY(93vh);
 }
 
 #css:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
-
 #github {
-    --y-speed: 18s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -155%;
-    transform: translateY(93vh);
+  --y-speed: 18s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -155%;
+  transform: translateY(93vh);
 }
 
 #github:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #code {
-    --y-speed: 14s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -265%;
-    transform: translateY(93vh);
+  --y-speed: 14s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -265%;
+  transform: translateY(93vh);
 }
 
 #code:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #music {
-    --y-speed: 6s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -345%;
-    transform: translateY(93vh);
+  --y-speed: 6s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -345%;
+  transform: translateY(93vh);
 }
 
 #music:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #person {
-    --y-speed: 7s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -445%;
-    transform: translateY(92vh);
+  --y-speed: 7s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -445%;
+  transform: translateY(92vh);
 }
 
 #person:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #fish {
-    --y-speed: 7s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -560%;
-    transform: translateY(94vh);
+  --y-speed: 7s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -560%;
+  transform: translateY(94vh);
 }
 
 #fish:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #python {
-    --y-speed: 25s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -650%;
-    transform: translateY(94vh);
+  --y-speed: 25s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -650%;
+  transform: translateY(94vh);
 }
 
 #python:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #rocket {
-    --y-speed: 2s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -745%;
-    transform: translateY(93vh);
+  --y-speed: 2s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -745%;
+  transform: translateY(93vh);
 }
 
 #rocket:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #brain {
-    --y-speed: 15s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -845%;
-    transform: translateY(92vh);
+  --y-speed: 15s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -845%;
+  transform: translateY(92vh);
 }
 
 #brain:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #motorcycle {
-    --y-speed: 5s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -960%;
-    transform: translateY(95vh);
+  --y-speed: 5s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -960%;
+  transform: translateY(95vh);
 }
 
 #motorcycle:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #robot {
-    --y-speed: 10s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1050%;
-    transform: translateY(93vh);
+  --y-speed: 10s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1050%;
+  transform: translateY(93vh);
 }
 
 #robot:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #square-js {
-    --y-speed: 24s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1150%;
-    transform: translateY(92vh);
+  --y-speed: 24s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1150%;
+  transform: translateY(92vh);
 }
 
 #square-js:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #java {
-    --y-speed: 27s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1250%;
-    transform: translateY(92vh);
+  --y-speed: 27s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1250%;
+  transform: translateY(92vh);
 }
 
 #java:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #laptop-code {
-    --y-speed: 11s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1360%;
-    transform: translateY(94vh);
+  --y-speed: 11s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1360%;
+  transform: translateY(94vh);
 }
 
 #laptop-code:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #stack-overflow {
-    --y-speed: 15s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1465%;
-    transform: translateY(94vh);
+  --y-speed: 15s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1465%;
+  transform: translateY(94vh);
 }
 
 #stack-overflow:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
-
 #html5 {
-    --y-speed: 20s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1550%;
-    transform: translateY(93vh);
+  --y-speed: 20s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1550%;
+  transform: translateY(93vh);
 }
 
 #html5:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #dumbbell {
-    --y-speed: 5s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1665%;
-    transform: translateY(95vh);
+  --y-speed: 5s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1665%;
+  transform: translateY(95vh);
 }
 
 #dumbbell:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #react {
-    --y-speed: 14s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1750%;
-    transform: translateY(93vh);
+  --y-speed: 14s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1750%;
+  transform: translateY(93vh);
 }
 
 #react:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #yin-yang {
-    --y-speed: 15s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1850%;
-    transform: translateY(92vh);
+  --y-speed: 15s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1850%;
+  transform: translateY(92vh);
 }
 
 #yin-yang:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #dog {
-    --y-speed: 10s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -1948%;
-    transform: translateY(93vh);
+  --y-speed: 10s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -1948%;
+  transform: translateY(93vh);
 }
 
 #dog:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #cat {
-    --y-speed: 8s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -2050%;
-    transform: translateY(92vh);
+  --y-speed: 8s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -2050%;
+  transform: translateY(92vh);
 }
 
 #cat:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #earth-americas {
-    --y-speed: 9s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -2145%;
-    transform: translateY(92vh);
+  --y-speed: 9s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -2145%;
+  transform: translateY(92vh);
 }
 
 #earth-americas:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 #google {
-    --y-speed: 16s;
-    animation: y var(--y-speed) linear infinite alternate;
-    position: relative;
-    top: -2345%;
-    transform: translateY(92vh);
+  --y-speed: 16s;
+  animation: y var(--y-speed) linear infinite alternate;
+  position: relative;
+  top: -2345%;
+  transform: translateY(92vh);
 }
 
 #google:hover {
-    animation-play-state: paused;
-    cursor: pointer;
+  animation-play-state: paused;
+  cursor: pointer;
 }
 
-
 .message-bubble {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    z-index: 2;
-    /* Adjust position as needed */
-    top: 50px;
-    left: 50px;
-  }
-  
-  .icon-container {
-    position: relative;
-    display: inline-block;
-  }
-  
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 2;
+  /* Adjust position as needed */
+  top: 50px;
+  left: 50px;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+}
 
 /* -----------------------------ICON KEYFRAMES-------------------------- */
 
-
 /* Key Frames */
 @keyframes x {
-    100% {
-        transform: translateX(calc(100% - var(--width)));
-    }
+  100% {
+    transform: translateX(calc(100% - var(--width)));
+  }
 }
 
 @keyframes y {
-    100% {
-        transform: translateY(calc(100% - var(--width)));
-    }
+  100% {
+    transform: translateY(calc(100% - var(--width)));
+  }
 }
-
