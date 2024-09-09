@@ -1,10 +1,35 @@
 // Importing music
 import "../styles/Norsang.css";
+import React, { useState, useEffect } from "react";
+
 import "font-awesome/css/font-awesome.min.css";
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import NavBar from "./NavBar";
 
 export default function Norsang() {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 647);
+
+  const animation = {
+    intial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
+  useEffect(() => {
+    function handleResize() {
+      setIsLargeScreen(window.innerWidth > 647);
+    }
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const textVariants = {
     hidden: {},
     visible: {
@@ -41,9 +66,70 @@ export default function Norsang() {
           </motion.span>
         ))}
       </motion.div>
-      <motion.div className="relative top-28 text-textBlue">
-        Software Developer by Profession, Problem Solver by Passion, Designer by
-        Nature
+      <motion.div className="relative top-32 text-textBlue text-[14px] w-2/3 sm:w-full sm:text-[18px] sm:p-2">
+        {isLargeScreen ? (
+          <div className="flex justify-center space-x-4">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 3.4 }}
+            >
+              Software Engineer by Profession{" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 7.6 }}
+            >
+              |
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 5 }}
+            >
+              Problem Solver by Passion
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 7.6 }}
+            >
+              |
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 6.4 }}
+            >
+              Designer by Nature
+            </motion.div>
+          </div>
+        ) : (
+          <div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 3.4 }}
+            >
+              Software Engineer by Profession
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 5 }}
+            >
+              Problem Solver by Passion
+            </motion.div>{" "}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, delay: 6.4 }}
+            >
+              Designer by Nature
+            </motion.div>
+          </div>
+        )}
       </motion.div>
       <NavBar className="text-white flex flex-row space-x-4 fixed bottom-4" />
     </motion.div>

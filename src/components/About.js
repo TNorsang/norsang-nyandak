@@ -12,7 +12,8 @@ export default function About() {
         <Logo />
       </motion.div>
 
-      <motion.div className="text-white w-1/2">
+      <motion.div className="text-white w-5/6">
+        <h1 className="font-extrabold text-[22px]">Tashi Delek</h1>
         My name is Norsang Nyandak, and I recently graduated with a Bachelor’s
         Degree in Computer Science from the New Jersey Institute of Technology.
         My passion lies in solving real-world problems, and discovering software
