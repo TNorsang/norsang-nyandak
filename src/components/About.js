@@ -36,7 +36,7 @@ export default function About() {
         <Logo />
       </motion.div>
 
-      <motion.div className="text-textBlue w-1/2">
+      <motion.div className="text-textBlue w-full p-10 sm:w-1/2">
         <motion.div
           key={index}
           initial="hidden"
@@ -51,6 +51,7 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 2 }}
+          className=""
         >
           My name is Norsang Nyandak, and I recently graduated with a Bachelor’s
           Degree in Computer Science from the New Jersey Institute of
