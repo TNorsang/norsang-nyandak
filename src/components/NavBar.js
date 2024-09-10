@@ -1,27 +1,16 @@
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import colors from "../config/colors";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function NavBar(props) {
-  const [animation, setAnimation] = useState(false);
-
-  // useEffect(() => {
-  //   const hasVisited = localStorage.getItem("hasVisited");
-
-  //   if (!hasVisited) {
-  //     localStorage.setItem("hasVisited", "true");
-  //   } else {
-  //     setAnimation(true);
-  //   }
-  // }, []);
+  const isFirstVisit = localStorage.getItem("hasVisited") == null;
 
   const linkVariants = {
-    key: { animation },
-    hidden: { opacity: animation ? 1 : 0, color: colors.textBlue },
+    hidden: { opacity: isFirstVisit ? 0 : 1, color: colors.textBlue },
     visible: {
       opacity: 1,
-      transition: animation ? { duration: 4, delay: 9 } : { duration: 0.5 },
+      transition: isFirstVisit ? { duration: 4, delay: 9 } : { duration: 0.5 },
     },
     hover: {
       scale: 1.2,

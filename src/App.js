@@ -21,7 +21,7 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 9 }}
-          className="text-white flex flex-row space-x-4 fixed bottom-4 sm:bottom-16 justify-center w-full"
+          className="text-white flex flex-row space-x-4 fixed text-[12px] bottom-4 sm:text-[16px] sm:bottom-16 justify-center w-full"
         />
       </div>
     </Router>

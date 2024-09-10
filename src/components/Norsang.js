@@ -51,9 +51,9 @@ export default function Norsang() {
   };
   console.log("First isFirstVisit outside UseEffect", isFirstVisit);
   return (
-    <motion.div className="Background flex flex-col justify-center items-center h-screen relative bg-backgroundBlue">
+    <motion.div className="Background flex flex-col justify-center items-center h-[100svh] relative bg-backgroundBlue">
       {/* NN */}
-      <motion.div className="font-cinzel text-[200px] text-initialBlue absolute">
+      <motion.div className="font-cinzel text-[140px] sm:text-[200px] text-initialBlue absolute">
         NN
       </motion.div>
       {/* Norsang Nyandak */}
@@ -65,15 +65,20 @@ export default function Norsang() {
         variants={isFirstVisit ? textVariants : {}}
       >
         {"Norsang Nyandak".split("").map((letter, index) => (
-          <motion.span key={index} variants={letterVariants}>
+          <motion.span
+            key={index}
+            variants={letterVariants}
+            className="text-[20px] sm:text-[28px]"
+          >
             {letter}
           </motion.span>
         ))}
       </motion.div>
       {/* Description */}
-      <motion.div className="relative top-36 text-textBlue text-[14px] w-2/3 sm:top-36 sm:w-full sm:text-[18px] sm:p-2">
+      <motion.div className="relative text-textBlue w-2/3 sm:w-full sm:p-2">
         {isLargeScreen ? (
-          <div className="flex justify-center space-x-4">
+          // Larget Screen
+          <div className="flex justify-center space-x-4 text-[14px] sm:text-[18px] relative top-36">
             {isFirstVisit ? (
               <div className="flex justify-center space-x-4">
                 <motion.div
@@ -120,8 +125,8 @@ export default function Norsang() {
             )}
           </div>
         ) : (
-          // Mobile view simplified example
-          <div>
+          // Mobile Screen
+          <div className="flex flex-col space-x-4 text-[12px] relative top-32">
             {isFirstVisit ? (
               <div>
                 <motion.div
@@ -147,27 +152,34 @@ export default function Norsang() {
                 </motion.div>
               </div>
             ) : (
-              <div> </div>
+              <div>
+                <div>
+                  <motion.div>Software Engineer by Profession</motion.div>
+                  <motion.div>Problem Solver by Passion</motion.div>{" "}
+                  <motion.div>Designer by Nature</motion.div>
+                </div>{" "}
+              </div>
             )}
           </div>
         )}
       </motion.div>
       {/* icons */}
-      <motion.div className="relative top-44 sm:top-48 flex space-x-2">
+      <motion.div className="relative top-40 sm:top-48">
         {isFirstVisit ? (
           <motion.div
+            className="flex space-x-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
               duration: 4,
-              delay: 0,
+              delay: 9,
             }}
           >
             <Icons iconRef={FaGithub} variants={iconVariants} />
             <Icons iconRef={FaLinkedin} variants={iconVariants} />
           </motion.div>
         ) : (
-          <motion.div className="flex border-2">
+          <motion.div className="flex space-x-2">
             <Icons iconRef={FaGithub} variants={iconVariants} />
             <Icons iconRef={FaLinkedin} variants={iconVariants} />
           </motion.div>
