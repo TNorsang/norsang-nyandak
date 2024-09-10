@@ -175,12 +175,6 @@ export default function Norsang() {
           </a>
         </motion.div>
       </motion.div>
-      <NavBar
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 4, delay: 9 }}
-        className="text-white flex flex-row space-x-4 fixed bottom-16"
-      />
     </motion.div>
   );
 }

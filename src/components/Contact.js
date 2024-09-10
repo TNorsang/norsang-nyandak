@@ -15,7 +15,6 @@ export default function Contact() {
       <motion.div>
         <ComingSoon />
       </motion.div>
-      <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" />
     </motion.div>
   );
 }

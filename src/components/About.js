@@ -61,7 +61,7 @@ export default function About() {
           companionship and contribute to improving lives.
         </motion.div>
       </motion.div>
-      <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" />
+      {/* <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" /> */}
     </motion.div>
   );
 }

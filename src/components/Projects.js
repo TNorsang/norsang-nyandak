@@ -15,7 +15,6 @@ export default function Projects() {
       <motion.div>
         <ComingSoon />
       </motion.div>
-      <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" />
     </motion.div>
   );
 }
