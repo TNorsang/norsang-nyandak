@@ -1,37 +1,26 @@
 import "../styles/Norsang.css";
 import React, { useState, useEffect } from "react";
-import "font-awesome/css/font-awesome.min.css";
-import { motion, transform } from "framer-motion";
-import NavBar from "./NavBar";
+import { motion } from "framer-motion";
 import colors from "../config/colors";
-// Icons
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import Icons from "./Icons";
 
 export default function Norsang() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 647);
 
-  const animation = {
-    intial: {
-      opacity: 0,
-    },
-    animate: {
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
+  const isFirstVisit = localStorage.getItem("hasVisited") == null;
   useEffect(() => {
+    if (isFirstVisit) {
+      localStorage.setItem("hasVisited", "yes");
+    }
     function handleResize() {
       setIsLargeScreen(window.innerWidth > 647);
     }
+
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   const textVariants = {
     hidden: {},
     visible: {
@@ -60,19 +49,20 @@ export default function Norsang() {
       },
     },
   };
+  console.log("First isFirstVisit outside UseEffect", isFirstVisit);
   return (
     <motion.div className="Background flex flex-col justify-center items-center h-screen relative bg-backgroundBlue">
-      {/* Hero Section */}
-
-      {/* Logo */}
+      {/* NN */}
       <motion.div className="font-cinzel text-[200px] text-initialBlue absolute">
         NN
       </motion.div>
+      {/* Norsang Nyandak */}
       <motion.div
+        key={isFirstVisit}
         className="font-windsong text-[28px] text-nameGold absolute"
         initial="hidden"
         animate="visible"
-        variants={textVariants}
+        variants={isFirstVisit ? textVariants : {}}
       >
         {"Norsang Nyandak".split("").map((letter, index) => (
           <motion.span key={index} variants={letterVariants}>
@@ -80,100 +70,108 @@ export default function Norsang() {
           </motion.span>
         ))}
       </motion.div>
-      {/* My Description */}
+      {/* Description */}
       <motion.div className="relative top-36 text-textBlue text-[14px] w-2/3 sm:top-36 sm:w-full sm:text-[18px] sm:p-2">
         {isLargeScreen ? (
           <div className="flex justify-center space-x-4">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 3.4 }}
-            >
-              Software Engineer by Profession{" "}
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 7.6 }}
-            >
-              |
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 5 }}
-            >
-              Problem Solver by Passion
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 7.6 }}
-            >
-              |
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 6.4 }}
-            >
-              Designer by Nature
-            </motion.div>
+            {isFirstVisit ? (
+              <div className="flex justify-center space-x-4">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 3.4 }}
+                >
+                  Software Engineer by Profession
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 7 }}
+                >
+                  |
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 5 }}
+                >
+                  Problem Solver by Passion
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 7 }}
+                >
+                  |
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 6.4 }}
+                >
+                  Designer by Nature
+                </motion.div>
+              </div>
+            ) : (
+              <div>
+                Software Engineer by Profession | Problem Solver by Passion |
+                Designer by Nature
+              </div>
+            )}
           </div>
         ) : (
+          // Mobile view simplified example
           <div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 3.4 }}
-            >
-              Software Engineer by Profession
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 5 }}
-            >
-              Problem Solver by Passion
-            </motion.div>{" "}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 4, delay: 6.4 }}
-            >
-              Designer by Nature
-            </motion.div>
+            {isFirstVisit ? (
+              <div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 3.4 }}
+                >
+                  Software Engineer by Profession
+                </motion.div>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 5 }}
+                >
+                  Problem Solver by Passion
+                </motion.div>{" "}
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 4, delay: 6.4 }}
+                >
+                  Designer by Nature
+                </motion.div>
+              </div>
+            ) : (
+              <div> </div>
+            )}
           </div>
         )}
       </motion.div>
-      {/* Icons */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          duration: 4,
-          delay: 9,
-        }}
-        className="relative top-44 sm:top-48 flex space-x-2"
-      >
-        <motion.div variants={iconVariants} whileHover="hover">
-          <a
-            href="https://www.linkedin.com/in/norsang-nyandak/"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* icons */}
+      <motion.div className="relative top-44 sm:top-48 flex space-x-2">
+        {isFirstVisit ? (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 4,
+              delay: 0,
+            }}
           >
-            <FaLinkedin className="text-2xl sm:text-4xl" />
-          </a>
-        </motion.div>
-        <motion.div variants={iconVariants} whileHover="hover">
-          <a
-            href="https://github.com/TNorsang"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub className="text-2xl sm:text-4xl" />
-          </a>
-        </motion.div>
+            <Icons iconRef={FaGithub} variants={iconVariants} />
+            <Icons iconRef={FaLinkedin} variants={iconVariants} />
+          </motion.div>
+        ) : (
+          <motion.div className="flex border-2">
+            <Icons iconRef={FaGithub} variants={iconVariants} />
+            <Icons iconRef={FaLinkedin} variants={iconVariants} />
+          </motion.div>
+        )}
       </motion.div>
     </motion.div>
   );
