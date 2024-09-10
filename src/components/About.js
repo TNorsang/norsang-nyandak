@@ -51,7 +51,6 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 2 }}
-          className=""
         >
           My name is Norsang Nyandak, and I recently graduated with a Bachelor’s
           Degree in Computer Science from the New Jersey Institute of
@@ -62,7 +61,7 @@ export default function About() {
           companionship and contribute to improving lives.
         </motion.div>
       </motion.div>
-      <NavBar className="text-white flex flex-row space-x-4 fixed bottom-4" />
+      <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" />
     </motion.div>
   );
 }
