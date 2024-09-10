@@ -2,7 +2,6 @@
 import "../styles/Norsang.css";
 import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
-import NavBar from "./NavBar";
 import Logo from "./Logo";
 import { useState, useEffect } from "react";
 
@@ -61,7 +60,6 @@ export default function About() {
           companionship and contribute to improving lives.
         </motion.div>
       </motion.div>
-      {/* <NavBar className="text-white flex flex-row space-x-4 fixed bottom-16" /> */}
     </motion.div>
   );
 }

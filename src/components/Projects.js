@@ -2,7 +2,6 @@
 import "../styles/Norsang.css";
 import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
-import NavBar from "./NavBar";
 import Logo from "./Logo";
 import ComingSoon from "./ComingSoon";
 
