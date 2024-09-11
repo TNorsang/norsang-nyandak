@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 export default function About() {
   const texts = ["Tashi Delek", "Hello", "Namaste"];
   const [index, setIndex] = useState(0);
+  const isFirstVisit = localStorage.getItem("hasVisited") == null;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -41,13 +42,13 @@ export default function About() {
           initial="hidden"
           animate="visible"
           exit="exit"
-          variants={textVariants}
+          variants={isFirstVisit ? textVariants : " "}
           className="font-extrabold text-[22px]"
         >
           {texts[index]}
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
+          initial={{ opacity: isFirstVisit ? 0 : 1 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 2 }}
         >
