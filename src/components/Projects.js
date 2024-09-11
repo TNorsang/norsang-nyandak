@@ -27,7 +27,7 @@ export default function Projects() {
         />
       </motion.div>
 
-      <ComingSoon className="absolute bottom-52" />
+      <ComingSoon className="absolute bottom-32 sm:bottom-52" />
     </motion.div>
   );
 }
