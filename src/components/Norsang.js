@@ -176,13 +176,29 @@ export default function Norsang() {
               delay: 9,
             }}
           >
-            <Icons iconRef={FaGithub} variants={iconVariants} />
-            <Icons iconRef={FaLinkedin} variants={iconVariants} />
+            <Icons
+              link="https://github.com/TNorsang"
+              iconRef={FaGithub}
+              variants={iconVariants}
+            />
+            <Icons
+              link="https://www.linkedin.com/in/norsang-nyandak/"
+              iconRef={FaLinkedin}
+              variants={iconVariants}
+            />
           </motion.div>
         ) : (
           <motion.div className="flex space-x-2">
-            <Icons iconRef={FaGithub} variants={iconVariants} />
-            <Icons iconRef={FaLinkedin} variants={iconVariants} />
+            <Icons
+              link="https://github.com/TNorsang"
+              iconRef={FaGithub}
+              variants={iconVariants}
+            />
+            <Icons
+              link="https://www.linkedin.com/in/norsang-nyandak/"
+              iconRef={FaLinkedin}
+              variants={iconVariants}
+            />
           </motion.div>
         )}
       </motion.div>
