@@ -9,10 +9,11 @@ export default function About() {
   const texts = ["Tashi Delek", "Hello", "Namaste"];
   const [index, setIndex] = useState(0);
   const isFirstVisit = localStorage.getItem("aboutPageVisited") == null;
-  if (isFirstVisit) {
-    localStorage.setItem("aboutPageVisited", "yes");
-  }
+
   useEffect(() => {
+    if (isFirstVisit) {
+      localStorage.setItem("aboutPageVisited", "yes");
+    }
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, 8000);
