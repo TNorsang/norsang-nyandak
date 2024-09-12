@@ -8,10 +8,10 @@ import Icons from "./Icons";
 export default function Norsang() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 647);
 
-  const isFirstVisit = localStorage.getItem("hasVisited") == null;
+  const isFirstVisit = localStorage.getItem("mainPageVisited") == null;
   useEffect(() => {
     if (isFirstVisit) {
-      localStorage.setItem("hasVisited", "yes");
+      localStorage.setItem("mainPageVisited", "yes");
     }
     function handleResize() {
       setIsLargeScreen(window.innerWidth > 647);
@@ -49,7 +49,6 @@ export default function Norsang() {
       },
     },
   };
-  console.log("First isFirstVisit outside UseEffect", isFirstVisit);
   return (
     <motion.div className="Background flex flex-col justify-center items-center h-[100svh] relative bg-backgroundBlue">
       {/* NN */}

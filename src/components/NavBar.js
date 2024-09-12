@@ -4,7 +4,7 @@ import colors from "../config/colors";
 import { useState } from "react";
 
 export default function NavBar(props) {
-  const isFirstVisit = localStorage.getItem("hasVisited") == null;
+  const isFirstVisit = localStorage.getItem("mainPageVisited") == null;
 
   const linkVariants = {
     hidden: { opacity: isFirstVisit ? 0 : 1, color: colors.textBlue },
