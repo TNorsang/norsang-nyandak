@@ -77,10 +77,11 @@ export default function Norsang() {
       {/* Description */}
       <motion.div className="relative text-textBlue w-2/3 sm:w-full sm:p-2">
         {isLargeScreen ? (
-          // Larget Screen
-          <div className="flex justify-center space-x-3 text-[14px] sm:text-[18px] relative top-36">
+          // Larget Screen Logic
+          <div className="flex justify-center text-[14px] sm:text-[18px] relative top-36">
             {isFirstVisit ? (
-              <div className="flex justify-center">
+              // Larger Screen First Page Visit
+              <div className="flex justify-center space-x-4">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -118,6 +119,7 @@ export default function Norsang() {
                 </motion.div>
               </div>
             ) : (
+              // Larger Screen After First Page Visit
               <div>
                 Software Engineer by Profession | Problem Solver by Passion |
                 Designer by Nature
