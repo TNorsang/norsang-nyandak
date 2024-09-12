@@ -129,9 +129,9 @@ export default function Norsang() {
           </div>
         ) : (
           // Mobile Screen
-          <div className="flex flex-col space-x-4 text-[12px] relative top-32">
+          <div className="relative space-x-4 text-[12px] top-32">
             {isFirstVisit ? (
-              <div>
+              <div className="flex flex-col justify-center items-center">
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -155,12 +155,10 @@ export default function Norsang() {
                 </motion.div>
               </div>
             ) : (
-              <div>
-                <div>
-                  <motion.div>Software Engineer by Profession</motion.div>
-                  <motion.div>Problem Solver by Passion</motion.div>{" "}
-                  <motion.div>Designer by Nature</motion.div>
-                </div>{" "}
+              <div className="flex flex-col justify-center items-center">
+                <motion.div>Software Engineer by Profession</motion.div>
+                <motion.div>Problem Solver by Passion</motion.div>{" "}
+                <motion.div>Designer by Nature</motion.div>
               </div>
             )}
           </div>
