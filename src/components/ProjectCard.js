@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
   return (
     // Whole Card
     <motion.div
-      className="rounded-xl overflow-hidden"
+      className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl my-2"
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1 }}
@@ -22,7 +22,7 @@ export default function ProjectCard(props) {
         {/* Image */}
         <img
           src={props.image}
-          alt={`${props.title} image`}
+          alt={props.title}
           className="w-full h-full object-cover"
         />
         {/* Title */}

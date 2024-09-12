@@ -34,7 +34,7 @@ export default function About() {
 
   return (
     <motion.div className=" flex justify-center items-center h-screen relative bg-backgroundBlue">
-      <motion.div className="w-full absolute top-8 flex justify-center">
+      <motion.div className="w-1/2 absolute top-8 flex justify-center">
         <Logo />
       </motion.div>
 
