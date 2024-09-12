@@ -120,9 +120,12 @@ export default function Norsang() {
               </div>
             ) : (
               // Larger Screen After First Page Visit
-              <div>
-                Software Engineer by Profession | Problem Solver by Passion |
-                Designer by Nature
+              <div className="flex justify-center space-x-4">
+                <motion.div>Software Engineer by Profession</motion.div>
+                <motion.div>|</motion.div>
+                <motion.div>Problem Solver by Passion</motion.div>
+                <motion.div>|</motion.div>
+                <motion.div>Designer by Nature</motion.div>
               </div>
             )}
           </div>
