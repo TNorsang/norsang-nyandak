@@ -7,11 +7,15 @@ import ComingSoon from "./ComingSoon";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  const philoTitle = "Philo";
-  const philoDescription =
-    "Artificial Emotional Platform aimed to mimic companionship";
-  const philoLink = "https://philo-x1.vercel.app/";
-  const philoImg = "../images/philo.png";
+  const projects = [
+    {
+      id: 1,
+      title: "Philo",
+      description: "Artificial Emotional Platform aimed to mimic companionship",
+      link: "https://philo-x1.vercel.app/",
+      image: "../images/philo.png",
+    },
+  ];
 
   return (
     <motion.div className="Background flex justify-center items-center h-screen relative bg-backgroundBlue">
@@ -19,12 +23,15 @@ export default function Projects() {
         <Logo />
       </motion.div>
       <motion.div className="absolute top-60">
-        <ProjectCard
-          title={philoTitle}
-          description={philoDescription}
-          link={philoLink}
-          image={philoImg}
-        />
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            image={project.image}
+          />
+        ))}
       </motion.div>
 
       <ComingSoon className="absolute bottom-32 sm:bottom-52" />
