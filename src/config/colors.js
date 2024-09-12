@@ -4,5 +4,4 @@ const colors = {
   nameGold: "#d5bd8a",
   backgroundBlue: "#00486b",
 };
-
 export default colors;
