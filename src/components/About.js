@@ -8,8 +8,10 @@ import { useState, useEffect } from "react";
 export default function About() {
   const texts = ["Tashi Delek", "Hello", "Namaste"];
   const [index, setIndex] = useState(0);
-  const isFirstVisit = localStorage.getItem("hasVisited") == null;
-
+  const isFirstVisit = localStorage.getItem("aboutPageVisited") == null;
+  if (isFirstVisit) {
+    localStorage.setItem("aboutPageVisited", "yes");
+  }
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
