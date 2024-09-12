@@ -51,7 +51,7 @@ export default function Contact() {
         </h2>
         {isSubmitted ? (
           <p className="text-green-400 text-center">
-            Thank you for your message. We'll be in touch soon!
+            Thank you for your message. I'll be in touch soon!
           </p>
         ) : (
           <form ref={form} onSubmit={sendEmail}>
