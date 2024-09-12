@@ -23,7 +23,7 @@ export default function ProjectCard(props) {
         <img
           src={props.image}
           alt={props.title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-55"
         />
         {/* Title */}
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
