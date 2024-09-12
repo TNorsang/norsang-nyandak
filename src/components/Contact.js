@@ -60,7 +60,7 @@ export default function Contact() {
                 whileFocus={{ scale: 1.02 }}
                 type="text"
                 placeholder="Your Name"
-                name="user_name"
+                name="from_name"
                 className="w-full px-3 py-2 bg-white bg-opacity-20 border border-textBlue rounded-md focus:outline-none focus:ring-2 focus:ring-textBlue text-textBlue placeholder-textBlue placeholder-opacity-70"
                 required
               />
