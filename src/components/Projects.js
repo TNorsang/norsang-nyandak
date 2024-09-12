@@ -45,11 +45,11 @@ export default function Projects() {
   ];
 
   return (
-    <motion.div className="flex justify-center relative border-2 border-black bg-backgroundBlue w-full">
+    <motion.div className="flex justify-center relative  bg-backgroundBlue w-full">
       <motion.div className="w-full absolute top-8">
         <Logo />
       </motion.div>
-      <motion.div className="container grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 top-40 border-blue-500 py-40">
+      <motion.div className="container grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 top-40 pt-40 pb-40">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

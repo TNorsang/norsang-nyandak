@@ -1,7 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import colors from "../config/colors";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function NavBar(props) {
   const isFirstVisit = localStorage.getItem("mainPageVisited") == null;
