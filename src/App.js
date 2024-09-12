@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="min-h-screen h-auto w-full bg-backgroundBlue">
         <Routes>
           <Route path="/" element={<Norsang />} />
           <Route path="/about" element={<About />} />

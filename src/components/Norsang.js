@@ -1,4 +1,3 @@
-import "../styles/Norsang.css";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import colors from "../config/colors";

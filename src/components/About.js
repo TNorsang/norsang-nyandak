@@ -1,5 +1,4 @@
 // Importing music
-import "../styles/Norsang.css";
 import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
 import Logo from "./Logo";

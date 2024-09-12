@@ -4,14 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.App {
-  text-align: center;
-  height: 100svh;
-}
-
-#dn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}

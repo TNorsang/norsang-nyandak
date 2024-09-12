@@ -1,9 +1,7 @@
 // Importing music
-import "../styles/Norsang.css";
 import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
-import ComingSoon from "./ComingSoon";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
@@ -13,28 +11,57 @@ export default function Projects() {
       title: "Philo",
       description: "Artificial Emotional Platform aimed to mimic companionship",
       link: "https://philo-x1.vercel.app/",
+      linkText: "Go To Philo",
       image: "../images/philo.png",
+      technologies: ["JavaScript", "TypeScript", "Next.JS", "React.JS", "AWS"],
+    },
+    {
+      id: 2,
+      title: "Test",
+      description: "Test Test Test",
+      link: "test",
+      linkText: "Go To Test",
+      image: "../images/philo.png",
+      technologies: ["JavaScript", "TypeScript", "Next.JS", "React.JS", "AWS"],
+    },
+    {
+      id: 3,
+      title: "Test 3",
+      description: "Test Test Test",
+      link: "test",
+      linkText: "Go To Test",
+      image: "../images/philo.png",
+      technologies: ["JavaScript", "TypeScript", "Next.JS", "React.JS", "AWS"],
+    },
+    {
+      id: 4,
+      title: "Test 4",
+      description: "Test Test Test",
+      link: "test",
+      linkText: "Go To Test",
+      image: "../images/philo.png",
+      technologies: ["JavaScript", "TypeScript", "Next.JS", "React.JS", "AWS"],
     },
   ];
 
   return (
-    <motion.div className="Background flex justify-center items-center h-screen relative bg-backgroundBlue">
-      <motion.div className="w-full absolute top-8 flex justify-center">
+    <motion.div className="flex justify-center relative border-2 border-black bg-backgroundBlue w-full">
+      <motion.div className="w-full absolute top-8">
         <Logo />
       </motion.div>
-      <motion.div className="absolute top-60">
+      <motion.div className="container grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-10 top-40 border-blue-500 py-40">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
             title={project.title}
             description={project.description}
             link={project.link}
+            linkText={project.linkText}
             image={project.image}
+            technologies={project.technologies}
           />
         ))}
       </motion.div>
-
-      <ComingSoon className="absolute bottom-32 sm:bottom-52" />
     </motion.div>
   );
 }
