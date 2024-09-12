@@ -3,20 +3,19 @@ import { motion } from "framer-motion";
 import Logo from "./Logo";
 import ProjectCard from "./ProjectCard";
 
-// Variants for staggered animation
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.3, // Controls the delay between the appearance of each card
+      staggerChildren: 0.3,
     },
   },
 };
 
 const cardVariants = {
   hidden: { opacity: 0, x: 50 },
-  show: { opacity: 1, x: 0, transition: { duration: 1.5 } }, // Cards appear one by one
+  show: { opacity: 1, x: 0, transition: { duration: 1.5 } },
 };
 
 export default function Projects() {
@@ -30,8 +29,8 @@ export default function Projects() {
       image: "../images/philo.png",
       technologies: [
         "TypeScript",
-        "Next.JS",
-        "React.JS",
+        "Next.js",
+        "React.js",
         "AWS",
         "Tailwind CSS",
         "Node.js",
@@ -41,7 +40,7 @@ export default function Projects() {
       id: 2,
       title: "Artificial Intelligence Tracking",
       description: "Implemented object detecting from a drone viewing camera",
-      link: "test",
+      link: "https://github.com/TNorsang/CS370-assignments/tree/main/Drone-Following",
       linkText: "View Artificial Intelligence",
       image:
         "https://miro.medium.com/v2/resize:fit:1059/1*ox98rEDeUMH-DXZL9-Rn6A.png",
@@ -58,10 +57,10 @@ export default function Projects() {
       id: 3,
       title: "Covey.Town",
       description: "Open source 2D Game group project",
-      link: "test",
-      linkText: "Go To Test",
+      link: "https://github.com/njit-cs-490-002-spring23/group-project-team-5",
+      linkText: "View Covey.Town",
       image: "../images/Covey.Town.png",
-      technologies: ["TypeScript", "React.JS", "MVC"],
+      technologies: ["TypeScript", "React.js", "MVC"],
     },
   ];
 
