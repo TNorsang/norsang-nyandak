@@ -64,7 +64,7 @@ export default function ProjectCard(props) {
             href={props.link}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center text-indigo-600 hover:text-indigo-800 transition-colors duration-200"
+            className="inline-flex items-center text-indigo-600 hover:text-nameGold transition-colors duration-200"
             whileHover={{ scale: 1.05, x: 5 }}
           >
             {props.linkText}
