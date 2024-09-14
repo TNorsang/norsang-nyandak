@@ -17,16 +17,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-
-        {/* Navbar positioned at the bottom of the content */}
-        <div className="relative bottom-4 sm:bottom-20">
-          <NavBar
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 4, delay: 9 }}
-            className="text-textBlue flex flex-row space-x-4 justify-center"
-          />
-        </div>
       </div>
     </Router>
   );

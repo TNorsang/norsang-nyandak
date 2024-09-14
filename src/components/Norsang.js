@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import colors from "../config/colors";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Icons from "./Icons";
+import NavBar from "./NavBar";
 
 export default function Norsang() {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 647);
@@ -205,6 +206,14 @@ export default function Norsang() {
           </motion.div>
         )}
       </motion.div>
+      <div className="relative bottom-4 sm:bottom-20">
+        <NavBar
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 4, delay: 9 }}
+          className="text-textBlue flex flex-row space-x-4 justify-center"
+        />
+      </div>
     </motion.div>
   );
 }
