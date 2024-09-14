@@ -20,9 +20,9 @@ export default function NavBar(props) {
   };
   return (
     <motion.ul
-      initial={isFirstVisit ? props.initial : {}}
-      animate={props.animate}
-      transition={props.transition}
+      initial={{ opacity: isFirstVisit ? 0 : 1 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 4, delay: 9 }}
       className="text-textBlue text-[14px] sm:text-[18px] flex flex-row space-x-4 justify-center"
     >
       <motion.li

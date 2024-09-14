@@ -208,11 +208,7 @@ export default function Norsang() {
       </motion.div>
       {/* NavBar */}
       <motion.div className="absolute bottom-8 sm:bottom-24">
-        <NavBar
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 4, delay: 9 }}
-        />
+        <NavBar />
       </motion.div>
     </motion.div>
   );
