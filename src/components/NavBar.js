@@ -23,7 +23,7 @@ export default function NavBar(props) {
       initial={isFirstVisit ? props.initial : {}}
       animate={props.animate}
       transition={props.transition}
-      className="text-textBlue flex flex-row space-x-4 justify-center"
+      className="text-textBlue text-[14px] sm:text-[18px] flex flex-row space-x-4 justify-center"
     >
       <motion.li
         variants={linkVariants}
