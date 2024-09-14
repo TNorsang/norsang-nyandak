@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <div className="w-full bg-backgroundBlue h-[100vh]">
+      <div className="w-full bg-backgroundBlue h-[100svh]">
         {/* Main content area grows to fill the available space */}
         <Routes>
           <Route path="/" element={<Norsang />} />
