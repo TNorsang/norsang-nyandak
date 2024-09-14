@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import colors from "../config/colors";
 // import { useState } from "react";
 
@@ -19,7 +19,12 @@ export default function NavBar(props) {
     },
   };
   return (
-    <ul className={props.className}>
+    <motion.ul
+      initial={isFirstVisit ? props.initial : {}}
+      animate={props.animate}
+      transition={props.transition}
+      className="text-textBlue flex flex-row space-x-4 justify-center"
+    >
       <motion.li
         variants={linkVariants}
         initial="hidden"
@@ -44,6 +49,6 @@ export default function NavBar(props) {
       >
         <Link to="/Contact">Contact</Link>
       </motion.li>
-    </ul>
+    </motion.ul>
   );
 }

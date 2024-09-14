@@ -212,7 +212,6 @@ export default function Norsang() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 9 }}
-          className="text-textBlue flex flex-row space-x-4 justify-center"
         />
       </motion.div>
     </motion.div>
