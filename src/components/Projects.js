@@ -67,7 +67,7 @@ export default function Projects() {
 
   return (
     <motion.div className="flex justify-center relative bg-backgroundBlue w-full px-6">
-      <motion.div className="w-1/6 absolute top-8">
+      <motion.div className="w-1/2 absolute top-8">
         <Logo />
       </motion.div>
 
