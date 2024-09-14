@@ -108,7 +108,7 @@ export default function Contact() {
         )}
       </motion.div>
       {/* NavBar */}
-      <motion.div className="absolute bottom-3 sm:bottom-24">
+      <motion.div className="absolute bottom-6 sm:bottom-24">
         <NavBar />
       </motion.div>
     </motion.div>
