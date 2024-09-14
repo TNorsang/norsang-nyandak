@@ -50,7 +50,7 @@ export default function Norsang() {
     },
   };
   return (
-    <motion.div className="flex flex-col items-center justify-center h-[100svh] relative bottom-8 sm:bottom-0">
+    <motion.div className="flex flex-col items-center justify-center h-[100svh] relative">
       {/* Logo */}
       <motion.div className="flex justify-center items-center w-full">
         {/* NN */}
@@ -206,14 +206,15 @@ export default function Norsang() {
           </motion.div>
         )}
       </motion.div>
-      <div className="relative bottom-4 sm:bottom-20">
+      {/* NavBar */}
+      <motion.div className="absolute bottom-8 sm:bottom-24">
         <NavBar
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 9 }}
           className="text-textBlue flex flex-row space-x-4 justify-center"
         />
-      </div>
+      </motion.div>
     </motion.div>
   );
 }
