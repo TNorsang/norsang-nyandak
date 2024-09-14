@@ -50,27 +50,30 @@ export default function Norsang() {
   };
   return (
     <motion.div className="Background flex flex-col justify-center items-center h-[100svh] relative bg-backgroundBlue">
-      {/* NN */}
-      <motion.div className="font-cinzel text-[140px] sm:text-[200px] text-initialBlue absolute">
-        NN
-      </motion.div>
-      {/* Norsang Nyandak */}
-      <motion.div
-        key={isFirstVisit}
-        className="font-windsong text-[28px] text-nameGold absolute"
-        initial="hidden"
-        animate="visible"
-        variants={isFirstVisit ? textVariants : {}}
-      >
-        {"Norsang Nyandak".split("").map((letter, index) => (
-          <motion.span
-            key={index}
-            variants={letterVariants}
-            className="text-[20px] sm:text-[28px]"
-          >
-            {letter}
-          </motion.span>
-        ))}
+      {/* Logo */}
+      <motion.div className="absolute flex justify-center items-center w-full">
+        {/* NN */}
+        <motion.div className="font-cinzel text-[140px] sm:text-[200px] text-initialBlue absolute">
+          NN
+        </motion.div>
+        {/* Norsang Nyandak */}
+        <motion.div
+          key={isFirstVisit}
+          className="font-windsong text-[28px] text-nameGold absolute"
+          initial="hidden"
+          animate="visible"
+          variants={isFirstVisit ? textVariants : {}}
+        >
+          {"Norsang Nyandak".split("").map((letter, index) => (
+            <motion.span
+              key={index}
+              variants={letterVariants}
+              className="text-[20px] sm:text-[28px]"
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </motion.div>
       </motion.div>
       {/* Description */}
       <motion.div className="relative text-textBlue w-2/3 sm:w-full sm:p-2">

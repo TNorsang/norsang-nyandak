@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="w-full bg-backgroundBlue h-[100vh]">
         {/* Main content area grows to fill the available space */}
         <Routes>
           <Route path="/" element={<Norsang />} />
@@ -19,7 +19,7 @@ function App() {
         </Routes>
 
         {/* Navbar positioned at the bottom of the content */}
-        <div className="relative bottom-20">
+        <div className="relative bottom-4 sm:bottom-20">
           <NavBar
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
