@@ -10,9 +10,9 @@ export default function Norsang() {
 
   const isFirstVisit = localStorage.getItem("mainPageVisited") == null;
   useEffect(() => {
-    if (isFirstVisit) {
-      localStorage.setItem("mainPageVisited", "yes");
-    }
+    // if (isFirstVisit) {
+    //   localStorage.setItem("mainPageVisited", "yes");
+    // }
     function handleResize() {
       setIsLargeScreen(window.innerWidth > 647);
     }
@@ -87,35 +87,35 @@ export default function Norsang() {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 3.4 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Software Engineer by Profession
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 7 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   |
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 5 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Problem Solver by Passion
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 7 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   |
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 6.4 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Designer by Nature
                 </motion.div>
@@ -139,21 +139,21 @@ export default function Norsang() {
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 3.4 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Software Engineer by Profession
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 5 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Problem Solver by Passion
                 </motion.div>{" "}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ duration: 4, delay: 6.4 }}
+                  transition={{ duration: 2, delay: 3 }}
                 >
                   Designer by Nature
                 </motion.div>
@@ -176,8 +176,8 @@ export default function Norsang() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-              duration: 4,
-              delay: 9,
+              duration: 2,
+              delay: 4,
             }}
           >
             <Icons
