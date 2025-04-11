@@ -3,6 +3,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
 import { useState, useEffect } from "react";
+import NavBar from "./NavBar";
 
 export default function About() {
   const texts = ["Tashi Delek", "Hello", "Namaste"];
@@ -33,22 +34,25 @@ export default function About() {
   };
 
   return (
-    <motion.div className=" flex justify-center items-center h-screen relative bg-backgroundBlue">
-      <motion.div className="w-1/2 absolute top-8 flex justify-center">
+    <motion.div className="flex justify-center items-center h-[100svh] relative bg-backgroundBlue">
+      {/* Logo */}
+      <motion.div className="w-screen absolute top-8 flex justify-center">
         <Logo />
       </motion.div>
-
-      <motion.div className="text-textBlue w-full p-10 sm:w-1/2">
+      {/* About Me Passage */}
+      <motion.div className="text-textBlue w-full text-[12px] sm:text-[20px] mx-12 sm:px-0 pt-20 sm:w-1/2">
+        {/* Greeting Texts */}
         <motion.div
           key={index}
           initial="hidden"
           animate="visible"
           exit="exit"
           variants={isFirstVisit ? textVariants : " "}
-          className="font-extrabold text-[22px]"
+          className="font-extrabold sm:text-[22px]"
         >
           {texts[index]}
         </motion.div>
+        {/* Passage */}
         <motion.div
           initial={{ opacity: isFirstVisit ? 0 : 1 }}
           animate={{ opacity: 1 }}
@@ -62,6 +66,10 @@ export default function About() {
           Philo, an Artificial Emotional Platform designed to emulate
           companionship and contribute to improving lives.
         </motion.div>
+      </motion.div>
+      {/* NavBar */}
+      <motion.div className="absolute bottom-8 sm:bottom-24">
+        <NavBar />
       </motion.div>
     </motion.div>
   );

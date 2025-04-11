@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Logo from "./Logo";
 import { Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import NavBar from "./NavBar";
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -36,12 +37,14 @@ export default function Contact() {
   };
 
   return (
-    <motion.div className="Background flex flex-col justify-center items-center min-h-screen relative bg-backgroundBlue p-4">
+    <motion.div className="flex flex-col items-center min-h-screen relative bg-backgroundBlue p-4">
+      {/* Logo */}
       <motion.div className="w-full max-w-md mb-8">
         <Logo />
       </motion.div>
+      {/* Form */}
       <motion.div
-        className="w-full max-w-md bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-xl p-8"
+        className="w-full max-w-md bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-xl p-4 sm:p-8 relative sm:top-20"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -103,6 +106,10 @@ export default function Contact() {
             </motion.button>
           </form>
         )}
+      </motion.div>
+      {/* NavBar */}
+      <motion.div className="absolute bottom-6 sm:bottom-24">
+        <NavBar />
       </motion.div>
     </motion.div>
   );

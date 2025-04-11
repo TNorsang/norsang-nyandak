@@ -2,6 +2,7 @@ import "font-awesome/css/font-awesome.min.css";
 import { motion } from "framer-motion";
 import Logo from "./Logo";
 import ProjectCard from "./ProjectCard";
+import NavBar from "./NavBar";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -75,7 +76,7 @@ export default function Projects() {
 
   return (
     <motion.div className="flex justify-center relative bg-backgroundBlue w-full px-6">
-      <motion.div className="w-1/6 absolute top-8">
+      <motion.div className="w-1/2 absolute top-8">
         <Logo />
       </motion.div>
 
@@ -98,6 +99,11 @@ export default function Projects() {
             />
           </motion.div>
         ))}
+      </motion.div>
+
+      {/* NavBar */}
+      <motion.div className="absolute bottom-8 sm:bottom-24">
+        <NavBar />
       </motion.div>
     </motion.div>
   );
