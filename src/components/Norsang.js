@@ -10,16 +10,16 @@ export default function Norsang() {
 
   const isFirstVisit = localStorage.getItem("mainPageVisited") == null;
   useEffect(() => {
-    // if (isFirstVisit) {
-    //   localStorage.setItem("mainPageVisited", "yes");
-    // }
+    if (isFirstVisit) {
+      localStorage.setItem("mainPageVisited", "yes");
+    }
     function handleResize() {
       setIsLargeScreen(window.innerWidth > 647);
     }
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [isFirstVisit]);
 
   const textVariants = {
     hidden: {},

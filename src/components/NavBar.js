@@ -10,7 +10,7 @@ export default function NavBar(props) {
     hidden: { opacity: isFirstVisit ? 0 : 1, color: colors.textBlue },
     visible: {
       opacity: 1,
-      transition: isFirstVisit ? { duration: 4, delay: 9 } : { duration: 0.5 },
+      transition: isFirstVisit ? { duration: 2, delay: 5 } : { duration: 0.5 },
     },
     hover: {
       scale: 1.2,
@@ -22,7 +22,7 @@ export default function NavBar(props) {
     <motion.ul
       initial={{ opacity: isFirstVisit ? 0 : 1 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 4, delay: 9 }}
+      transition={{ duration: 2, delay: 5 }}
       className="text-textBlue text-[14px] sm:text-[18px] flex flex-row space-x-4 justify-center"
     >
       <motion.li
