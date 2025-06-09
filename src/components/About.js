@@ -58,7 +58,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 2 }}
         >
-          My name is Norsang Nyandak, and I recently graduated with a Bachelor’s
+          My name is Norsang Nyandak, and I recently graduated with a Bachelor’
           Degree in Computer Science from the New Jersey Institute of
           Technology. My passion lies in solving real-world problems, and
           discovering software engineering has shown me how technology can
