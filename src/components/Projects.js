@@ -23,6 +23,24 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Tablet",
+      description: "Luxury eyewear website",
+      link: "https://tablethealth.com/",
+      linkText: "View Tablet",
+      image: "../images/Tablet.png",
+      technologies: [
+        "Next.js",
+        "React Native",
+        "Nest.js",
+        "TurboRepo",
+        "Tailwindcss",
+        "AWS Aurora",
+        "AWS Cognito",
+        "AWS Fargate",
+      ],
+    },
+    {
+      id: 2,
       title: "Pure Vision Optical",
       description: "Luxury eyewear website",
       link: "https://purevisionoptical.com/",
@@ -31,7 +49,7 @@ export default function Projects() {
       technologies: ["Wordpress", "Javascript", "PHP", "Jquery", "CSS"],
     },
     {
-      id: 2,
+      id: 3,
       title: "Philo",
       description: "Artificial Emotional Platform aimed to mimic companionship",
       link: "https://philo-x1.vercel.app/",
@@ -47,7 +65,7 @@ export default function Projects() {
       ],
     },
     {
-      id: 3,
+      id: 4,
       title: "Artificial Intelligence Tracking",
       description: "Implemented object detecting from a drone viewing camera",
       link: "https://github.com/TNorsang/CS370-assignments/tree/main/Drone-Following",
@@ -64,7 +82,7 @@ export default function Projects() {
       ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Covey.Town",
       description: "Open source 2D Game group project",
       link: "https://github.com/njit-cs-490-002-spring23/group-project-team-5",

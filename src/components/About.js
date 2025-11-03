@@ -6,7 +6,18 @@ import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
 
 export default function About() {
-  const texts = ["Tashi Delek", "Hello", "Namaste"];
+  //Hello in All different languages
+  const texts = [
+    "Tashi Delek",
+    "Hello",
+    "Namaste",
+    "Hola",
+    "Bonjour",
+    "Konnichiwa",
+    "Annyeonghaseyo",
+    "Nǐ hǎo",
+    "Ciao",
+  ];
   const [index, setIndex] = useState(0);
   const isFirstVisit = localStorage.getItem("aboutPageVisited") == null;
 
@@ -16,7 +27,7 @@ export default function About() {
     }
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 8000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -48,7 +59,7 @@ export default function About() {
           animate="visible"
           exit="exit"
           variants={isFirstVisit ? textVariants : " "}
-          className="font-extrabold sm:text-[22px]"
+          className="font-extrabold sm:text-[40px] mb-8"
         >
           {texts[index]}
         </motion.div>
@@ -58,13 +69,13 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ duration: 4, delay: 2 }}
         >
-          My name is Norsang Nyandak, and I recently graduated with a Bachelor’s
-          Degree in Computer Science from the New Jersey Institute of
-          Technology. My passion lies in solving real-world problems, and
-          discovering software engineering has shown me how technology can
-          transform my ideas into impactful solutions. Currently, I'm developing
-          Philo, an Artificial Emotional Platform designed to emulate
-          companionship and contribute to improving lives.
+          My name is Norsang Nyandak, a Full-Stack Developer with deep expertise
+          in Next.js, React Native, and Nest.js within monorepo (Turborepo)
+          architectures. I’m driven by a bias for action, a customer-obsessed
+          mindset, and a focus on building scalable, reliable systems that
+          perform in production. I hold a Bachelor’s Degree in Computer Science
+          from the New Jersey Institute of Technology. Great to virtually meet
+          you!
         </motion.div>
       </motion.div>
       {/* NavBar */}
