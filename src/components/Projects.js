@@ -24,7 +24,7 @@ export default function Projects() {
     {
       id: 1,
       title: "Tablet",
-      description: "Luxury eyewear website",
+      description: "Digital Pharmacy",
       link: "https://tablethealth.com/",
       linkText: "View Tablet",
       image: "../images/Tablet.png",
